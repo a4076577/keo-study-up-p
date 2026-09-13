@@ -263,3 +263,60 @@ figure.fig figcaption {
 .cardlinks a.rev { border-style: dashed; color: var(--green); }
 .cardlinks a.rev:hover { background: #f4f8f5; border-color: var(--green); color: var(--green); }
 @media print { .cardlinks { display: none; } }
+
+/* =====================================================================
+   स्वयं जाँच — सक्रिय पुनःस्मरण (active recall)
+   पढ़ना याद नहीं कराता; स्वयं को परखना कराता है।
+   ===================================================================== */
+.selfcheck {
+  border: 1px solid var(--rule); border-left: 4px solid var(--green);
+  border-radius: 0 6px 6px 0; background: #f7faf8;
+  padding: .9rem 1.1rem; margin: 1.6em 0;
+}
+.selfcheck > .label {
+  font-family: "Kohinoor Devanagari", sans-serif; font-size: .8rem;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--green);
+  display: block; margin-bottom: .6rem;
+}
+.qa { border-top: 1px dashed #c9d6cd; padding-top: .7rem; margin-top: .7rem; }
+.selfcheck .qa:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+.qa .q { font-size: .94rem; margin: 0 0 .45rem; }
+.qa .opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            gap: .25rem .8rem; font-size: .88rem; margin-bottom: .5rem; }
+.qa .opts span { padding: .12rem 0; }
+.qa .opts b { color: var(--blue); margin-right: .3rem; }
+.qa details { font-size: .9rem; }
+.qa details > summary {
+  cursor: pointer; display: inline-block; list-style: none;
+  font-family: "Kohinoor Devanagari", sans-serif; font-size: .82rem;
+  color: var(--green); border: 1px dashed var(--green); border-radius: 4px;
+  padding: .2rem .7rem; background: #fff; user-select: none;
+}
+.qa details > summary::-webkit-details-marker { display: none; }
+.qa details[open] > summary { background: #eaf2ec; }
+.qa .ans { margin-top: .55rem; padding: .55rem .7rem; background: #fff;
+           border: 1px solid var(--rule); border-radius: 4px; }
+.qa .ans .key { font-family: "Kohinoor Devanagari", sans-serif; font-weight: 700;
+                color: var(--green); display: block; margin-bottom: .3rem; }
+
+/* छपाई में उत्तर सदैव दिखें */
+@media print {
+  .qa details > summary { display: none; }
+  .qa details { display: block; }
+  .qa .ans { display: block !important; }
+  .selfcheck { break-inside: avoid; page-break-inside: avoid; }
+}
+
+/* ---------- अंतराल-पुनरावृत्ति अनुसूची ---------- */
+.schedule { border: 1px solid var(--rule); border-radius: 6px; background: #fff;
+            padding: .9rem 1.1rem; margin: 1.6em 0; }
+.schedule .label { font-family: "Kohinoor Devanagari", sans-serif; font-size: .8rem;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--accent);
+  display: block; margin-bottom: .6rem; }
+.schedule ol { margin: 0; padding-left: 1.3rem; font-size: .92rem; }
+.schedule li { margin-bottom: .45rem; }
+.schedule .day { font-family: "Kohinoor Devanagari", sans-serif; font-weight: 700;
+                 color: var(--accent); margin-right: .35rem; }
+.schedule .tick { display: inline-block; width: .95rem; height: .95rem;
+  border: 1.5px solid var(--rule); border-radius: 3px; margin-left: .4rem;
+  vertical-align: -.12rem; }
