@@ -1,0 +1,668 @@
+{
+ "mohenjodaro": {
+  "file": "mohenjodaro.jpg",
+  "hi": "मोहनजोदड़ो का विशाल स्नानागार",
+  "chapter": "2.1",
+  "commons": "Mohenjo-daro.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Saqib Qayyum",
+  "kb": 210
+ },
+ "dholavira": {
+  "file": "dholavira.jpg",
+  "hi": "धौलावीरा — जल-संरक्षण व्यवस्था",
+  "chapter": "2.1",
+  "commons": "Dholavira archaeological site 4.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Bhuppigraphy",
+  "kb": 408
+ },
+ "pashupati": {
+  "file": "pashupati.jpg",
+  "hi": "पशुपति मुहर",
+  "chapter": "2.1",
+  "commons": "Shiva Pashupati.jpg",
+  "license": "Public domain",
+  "author": "unknown Indus Valley Civilization sealmaker from Mohenjodaro archaeological site",
+  "kb": 1430
+ },
+ "lothal": {
+  "file": "lothal.jpg",
+  "hi": "लोथल की गोदी (डॉकयार्ड)",
+  "chapter": "2.1",
+  "commons": "Lothal Dockyard N-GJ-60.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Jashjashjash",
+  "kb": 158
+ },
+ "harappa": {
+  "file": "harappa.jpg",
+  "hi": "हड़प्पा पुरास्थल",
+  "chapter": "2.1",
+  "commons": "WellAndBathingPlatforms-Harappa.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Obed Suhail",
+  "kb": 223
+ },
+ "lioncapital": {
+  "file": "lioncapital.jpg",
+  "hi": "अशोक की सिंह शीर्ष — सारनाथ",
+  "chapter": "2.1",
+  "commons": "Lion Capital of Ashoka 3.jpg",
+  "license": "CC0",
+  "author": "Apurv013",
+  "kb": 158
+ },
+ "allahabadpil": {
+  "file": "allahabadpil.jpg",
+  "hi": "प्रयाग स्तंभ — प्रयाग प्रशस्ति",
+  "chapter": "2.1",
+  "commons": "Ashoka Pillar in Allahabad.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Aj.abhishek1998",
+  "kb": 234
+ },
+ "sanchi": {
+  "file": "sanchi.jpg",
+  "hi": "साँची का महास्तूप",
+  "chapter": "2.1",
+  "commons": "Stupa 1, Sanchi 02.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Bernard Gagnon",
+  "kb": 208
+ },
+ "dhamek": {
+  "file": "dhamek.jpg",
+  "hi": "धमेख स्तूप, सारनाथ",
+  "chapter": "2.1",
+  "commons": "The Dhamek Stupa , 500 CE ,Sarnath, Varanasi Uttar Pradesh.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "SpeakingArch",
+  "kb": 121
+ },
+ "barabar": {
+  "file": "barabar.jpg",
+  "hi": "बराबर गुफाएँ — लोमश ऋषि",
+  "chapter": "2.1",
+  "commons": "Barabar Caves inside Lomas Rishi cave.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Devajyoti Sarkar",
+  "kb": 190
+ },
+ "karle": {
+  "file": "karle.jpg",
+  "hi": "कार्ले का चैत्य गृह",
+  "chapter": "2.1",
+  "commons": "Grand Chaitya at Karla Caves - 2025 - 10.jpg",
+  "license": "CC0",
+  "author": "Oleg Yunakov",
+  "kb": 311
+ },
+ "lakshmibai": {
+  "file": "lakshmibai.jpg",
+  "hi": "रानी लक्ष्मीबाई, झाँसी",
+  "chapter": "2.3",
+  "commons": "The Rani of Jhansi leads dressed as a man fights the British cavalry.jpg",
+  "license": "Public domain",
+  "author": "AnonymousUnknown author",
+  "kb": 355
+ },
+ "bahadurshah": {
+  "file": "bahadurshah.jpg",
+  "hi": "बहादुर शाह जफर",
+  "chapter": "2.3",
+  "commons": "Bahadur Shah II.jpg",
+  "license": "Public domain",
+  "author": "Ágoston Schoefft",
+  "kb": 76
+ },
+ "firsttrain": {
+  "file": "firsttrain.jpg",
+  "hi": "भारत की प्रथम रेल (1853)",
+  "chapter": "2.3",
+  "commons": "Kali Maa temple.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Subhojit Chandra",
+  "kb": 163
+ },
+ "fortwilliam": {
+  "file": "fortwilliam.jpg",
+  "hi": "फोर्ट विलियम, कलकत्ता",
+  "chapter": "2.3",
+  "commons": "Gates of Fort William in Kolkata 03.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Pinakpani",
+  "kb": 192
+ },
+ "inc1885": {
+  "file": "inc1885.jpg",
+  "hi": "कांग्रेस का प्रथम अधिवेशन, 1885",
+  "chapter": "2.4",
+  "commons": "1st INC1885.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 136
+ },
+ "dandi": {
+  "file": "dandi.jpg",
+  "hi": "दांडी मार्च — नमक सत्याग्रह",
+  "chapter": "2.4",
+  "commons": "Marche sel.jpg",
+  "license": "Public domain",
+  "author": "Yann (talk)",
+  "kb": 154
+ },
+ "jallianwala": {
+  "file": "jallianwala.jpg",
+  "hi": "जलियाँवाला बाग",
+  "chapter": "2.4",
+  "commons": "Jallianwala Bagh, Amritsar 01.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Bernard Gagnon",
+  "kb": 265
+ },
+ "bhagatsingh": {
+  "file": "bhagatsingh.jpg",
+  "hi": "भगत सिंह",
+  "chapter": "2.4",
+  "commons": "Portrait photograph of Bhagat Singh, 1929.jpg",
+  "license": "Public domain",
+  "author": "Unknown photographer",
+  "kb": 768
+ },
+ "subhas": {
+  "file": "subhas.jpg",
+  "hi": "सुभाष चंद्र बोस",
+  "chapter": "2.4",
+  "commons": "Subhas-chandra-bose 0.jpg",
+  "license": "CC BY 4.0",
+  "author": "Rajni",
+  "kb": 150
+ },
+ "ambedkar": {
+  "file": "ambedkar.jpg",
+  "hi": "डॉ. भीमराव अंबेडकर",
+  "chapter": "2.4",
+  "commons": "Dr B R Ambedkar as Barrister in 1922.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 54
+ },
+ "kathakali": {
+  "file": "kathakali.jpg",
+  "hi": "कथकली",
+  "chapter": "2.5",
+  "commons": "Kathakali performer (2023) 03.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Vis M",
+  "kb": 573
+ },
+ "manipuri": {
+  "file": "manipuri.jpg",
+  "hi": "मणिपुरी",
+  "chapter": "2.5",
+  "commons": "Lord Krishna in Manipuri Ras Lila dance 01.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Suyash Dwivedi",
+  "kb": 267
+ },
+ "kuchipudi": {
+  "file": "kuchipudi.jpg",
+  "hi": "कुचिपुड़ी",
+  "chapter": "2.5",
+  "commons": "Kuchipudi Performer DS.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Augustus Binu/ facebook",
+  "kb": 218
+ },
+ "mohiniyattam": {
+  "file": "mohiniyattam.jpg",
+  "hi": "मोहिनीअट्टम",
+  "chapter": "2.5",
+  "commons": "Mohiniyattam at Kerala state school kalothsavam 2019.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Shagil Kannur",
+  "kb": 77
+ },
+ "sattriya": {
+  "file": "sattriya.jpg",
+  "hi": "सत्रीया",
+  "chapter": "2.5",
+  "commons": "A Sattriya dancer performing the dance form in Assam, India.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Joydeep Chakraborty",
+  "kb": 280
+ },
+ "veena": {
+  "file": "veena.jpg",
+  "hi": "वीणा — तत वाद्य",
+  "chapter": "2.5",
+  "commons": "Saraswati veena (Indian long-necked lute).png",
+  "license": "CC BY-SA 4.0",
+  "author": "Original:  unknownPhotograph:  Katharina Common",
+  "kb": 544
+ },
+ "tabla": {
+  "file": "tabla.jpg",
+  "hi": "तबला — अवनद्ध वाद्य",
+  "chapter": "2.5",
+  "commons": "Instrument perkusyjny TABLA firmy Meinl.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "http://muzyczny.pl",
+  "kb": 165
+ },
+ "imambara": {
+  "file": "imambara.jpg",
+  "hi": "बड़ा इमामबाड़ा, लखनऊ",
+  "chapter": "2.5",
+  "commons": "Bara Imambara Lucknow.jpg",
+  "license": "GFDL 1.2",
+  "author": "Muhammad Mahdi Karim",
+  "kb": 102
+ },
+ "chikankari": {
+  "file": "chikankari.jpg",
+  "hi": "चिकनकारी — लखनऊ का GI उत्पाद",
+  "chapter": "2.5",
+  "commons": "Chikan embroidery, Lucknow.jpg",
+  "license": "CC BY 2.0",
+  "author": "Joey Berzowska",
+  "kb": 213
+ },
+ "deogarh": {
+  "file": "deogarh.jpg",
+  "hi": "देवगढ़ का दशावतार मंदिर",
+  "chapter": "2.1",
+  "commons": "Remains of the Dashavatara Temple in Deogarh, Lalitpur.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Work2win",
+  "kb": 222
+ },
+ "bhitargaon": {
+  "file": "bhitargaon.jpg",
+  "hi": "भितरगाँव का गुप्तकालीन ईंट मंदिर",
+  "chapter": "2.1",
+  "commons": "Bhitargaon temple along with ASI inscription.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Ankitshilu",
+  "kb": 539
+ },
+ "ironpillar": {
+  "file": "ironpillar.jpg",
+  "hi": "महरौली का लौह स्तंभ",
+  "chapter": "2.1",
+  "commons": "Delhi Iron pillar, 2010-09-27.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Aiwok",
+  "kb": 421
+ },
+ "samudracoin": {
+  "file": "samudracoin.jpg",
+  "hi": "समुद्रगुप्त का वीणावादन सिक्का",
+  "chapter": "2.1",
+  "commons": "Samudragupta circa 335-380 CE.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "CNG Coins",
+  "kb": 118
+ },
+ "nalanda": {
+  "file": "nalanda.jpg",
+  "hi": "नालंदा महाविहार के अवशेष",
+  "chapter": "2.1",
+  "commons": "Temple 12 - Nalanda Mahavihara (17).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Sumitsurai",
+  "kb": 310
+ },
+ "qutub": {
+  "file": "qutub.jpg",
+  "hi": "कुतुब मीनार",
+  "chapter": "2.2",
+  "commons": "Qutub Minar in Delhi 03-2016.jpg",
+  "license": "FAL",
+  "author": "A.Savin",
+  "kb": 504
+ },
+ "alaidarwaza": {
+  "file": "alaidarwaza.jpg",
+  "hi": "अलाई दरवाजा — सच्ची मेहराब",
+  "chapter": "2.2",
+  "commons": "Alai darwaza.jpg",
+  "license": "Public domain",
+  "author": "Vssun",
+  "kb": 283
+ },
+ "tughlaqabad": {
+  "file": "tughlaqabad.jpg",
+  "hi": "तुगलकाबाद दुर्ग",
+  "chapter": "2.2",
+  "commons": "Outside view of Tughlaqabad Fort in Tughlakabad 05.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Pinakpani",
+  "kb": 190
+ },
+ "atala": {
+  "file": "atala.jpg",
+  "hi": "अटाला मस्जिद, जौनपुर — शर्की शैली",
+  "chapter": "2.2",
+  "commons": "Shahi Atala Masjid 5.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rangan Datta Wiki",
+  "kb": 390
+ },
+ "hampi": {
+  "file": "hampi.jpg",
+  "hi": "विरूपाक्ष मंदिर, हम्पी",
+  "chapter": "2.2",
+  "commons": "Hampi - Hemakuta Hill, Virupaksha Temple.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Ingo Mehling",
+  "kb": 175
+ },
+ "golgumbaz": {
+  "file": "golgumbaz.jpg",
+  "hi": "गोल गुंबद, बीजापुर",
+  "chapter": "2.2",
+  "commons": "Gol Gumbaz, Bijapur 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rangan Datta Wiki",
+  "kb": 138
+ },
+ "charminar": {
+  "file": "charminar.jpg",
+  "hi": "चारमीनार, हैदराबाद",
+  "chapter": "2.2",
+  "commons": "Charminar Hyderabad 1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "DidierTais",
+  "kb": 325
+ },
+ "shershah": {
+  "file": "shershah.jpg",
+  "hi": "शेरशाह का मकबरा, सासाराम",
+  "chapter": "2.2",
+  "commons": "Sher Shah Suri Tomb.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Nandanupadhyay",
+  "kb": 136
+ },
+ "humayuntomb": {
+  "file": "humayuntomb.jpg",
+  "hi": "हुमायूँ का मकबरा",
+  "chapter": "2.2",
+  "commons": "Tomb of Humayun, Delhi.jpg",
+  "license": "GFDL 1.2",
+  "author": "Muhammad Mahdi Karim",
+  "kb": 85
+ },
+ "bulanddarwaza": {
+  "file": "bulanddarwaza.jpg",
+  "hi": "बुलंद दरवाजा, फतेहपुर सीकरी",
+  "chapter": "2.2",
+  "commons": "Fatehput Sikiri Buland Darwaza gate 2010.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Marcin Białek",
+  "kb": 206
+ },
+ "tajmahal": {
+  "file": "tajmahal.jpg",
+  "hi": "ताजमहल, आगरा",
+  "chapter": "2.2",
+  "commons": "Taj Mahal, Agra, India edit2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Yann; edited by King of Hearts",
+  "kb": 129
+ },
+ "itmad": {
+  "file": "itmad.jpg",
+  "hi": "इतमाद-उद-दौला का मकबरा — ‘बेबी ताज’",
+  "chapter": "2.2",
+  "commons": "I'timād-ud-Daulah, Agra.jpg",
+  "license": "GFDL 1.2",
+  "author": "Muhammad Mahdi Karim",
+  "kb": 196
+ },
+ "raigad": {
+  "file": "raigad.jpg",
+  "hi": "रायगढ़ दुर्ग — शिवाजी की राजधानी",
+  "chapter": "2.2",
+  "commons": "Shivaji Maharaj Raigad.jpg",
+  "license": "GFDL 1.2",
+  "author": "User:Cj.samson",
+  "kb": 173
+ },
+ "rammohan": {
+  "file": "rammohan.jpg",
+  "hi": "राजा राममोहन राय",
+  "chapter": "2.3",
+  "commons": "Bust portrait of the Hindu reformer Ram Mohan Roy..jpg",
+  "license": "Public domain",
+  "author": "anonymous",
+  "kb": 297
+ },
+ "dayananda": {
+  "file": "dayananda.jpg",
+  "hi": "स्वामी दयानंद सरस्वती",
+  "chapter": "2.3",
+  "commons": "Swami Dayananda Saraswati.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Lisamwoz",
+  "kb": 164
+ },
+ "patel": {
+  "file": "patel.jpg",
+  "hi": "सरदार वल्लभभाई पटेल",
+  "chapter": "2.4",
+  "commons": "Sardar patel (cropped).jpg",
+  "license": "Public domain",
+  "author": "Government of India work",
+  "kb": 134
+ },
+ "nehru": {
+  "file": "nehru.jpg",
+  "hi": "जवाहरलाल नेहरू",
+  "chapter": "2.4",
+  "commons": "Jawaharlal Nehru, circa 1925.jpg",
+  "license": "Public domain",
+  "author": "Keystone View Company/FPG",
+  "kb": 140
+ },
+ "constituent": {
+  "file": "constituent.jpg",
+  "hi": "संविधान सभा",
+  "chapter": "2.4",
+  "commons": "A Constituent Assembly of India meeting in 1950.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 65
+ },
+ "chaurichaura": {
+  "file": "chaurichaura.jpg",
+  "hi": "चौरी-चौरा स्मारक",
+  "chapter": "2.4",
+  "commons": "Chauri chaura new photo.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Nitishkumarojha",
+  "kb": 248
+ },
+ "khajuraho": {
+  "file": "khajuraho.jpg",
+  "hi": "कंदारिया महादेव, खजुराहो — नागर शैली",
+  "chapter": "2.5",
+  "commons": "Homosexuality in Khajuraho sculpture.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Dey.sandip",
+  "kb": 337
+ },
+ "konark": {
+  "file": "konark.jpg",
+  "hi": "कोणार्क सूर्य मंदिर का चक्र",
+  "chapter": "2.5",
+  "commons": "Wheel engraved in the 13th century built Konark Sun Temple in Orissa, India.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Joydeep",
+  "kb": 307
+ },
+ "brihadeeswara": {
+  "file": "brihadeeswara.jpg",
+  "hi": "बृहदेश्वर मंदिर, तंजावुर — द्रविड़ शैली",
+  "chapter": "2.5",
+  "commons": "Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Original:  Rainer Halama\nDerivative work:  UnpetitproleX",
+  "kb": 131
+ },
+ "hoysaleswara": {
+  "file": "hoysaleswara.jpg",
+  "hi": "होयसलेश्वर मंदिर, हलेबिड",
+  "chapter": "2.5",
+  "commons": "Hoysaleswara Temple at Halebidu.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rohit Sharma",
+  "kb": 136
+ },
+ "dilwara": {
+  "file": "dilwara.jpg",
+  "hi": "दिलवाड़ा मंदिर, माउंट आबू",
+  "chapter": "2.5",
+  "commons": "Dilwara Temple, Mount Abu, Rajasthan.jpg",
+  "license": "CC0",
+  "author": "Getty Museum",
+  "kb": 150
+ },
+ "meenakshi": {
+  "file": "meenakshi.jpg",
+  "hi": "मीनाक्षी मंदिर का गोपुरम, मदुरै",
+  "chapter": "2.5",
+  "commons": "Madurai, India.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Bernard Gagnon",
+  "kb": 157
+ },
+ "mathurabuddha": {
+  "file": "mathurabuddha.jpg",
+  "hi": "मथुरा शैली की बुद्ध प्रतिमा",
+  "chapter": "2.5",
+  "commons": "Mathura (uttar pradesh), buddha stante, V-VI sec..JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Unknown authorUnknown author",
+  "kb": 329
+ },
+ "gandharabuddha": {
+  "file": "gandharabuddha.jpg",
+  "hi": "गांधार शैली की बुद्ध प्रतिमा",
+  "chapter": "2.5",
+  "commons": "Afghanistan, Gandhara, Hadda, late Kushan Period - Seated Buddha - 1967.39 - Cleveland Museum of Art.jpg",
+  "license": "CC0",
+  "author": "anonymous",
+  "kb": 180
+ },
+ "nataraja": {
+  "file": "nataraja.jpg",
+  "hi": "चोल कांस्य नटराज",
+  "chapter": "2.5",
+  "commons": "Shiva as the Lord of Dance LACMA edit.jpg",
+  "license": "Public domain",
+  "author": "",
+  "kb": 221
+ },
+ "padmapani": {
+  "file": "padmapani.jpg",
+  "hi": "पद्मपाणि बोधिसत्व, अजंता",
+  "chapter": "2.5",
+  "commons": "Bodhisattva Padmapani, cave 1, Ajanta, India.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 361
+ },
+ "mughalmini": {
+  "file": "mughalmini.jpg",
+  "hi": "मुगल लघुचित्र",
+  "chapter": "2.5",
+  "commons": "Mughal-emperor-akbar-miniature-painting-84434-ivory 4be8d884-6a8b-11ea-963c-5f43816952e0.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 81
+ },
+ "kangra": {
+  "file": "kangra.jpg",
+  "hi": "कांगड़ा शैली का चित्र",
+  "chapter": "2.5",
+  "commons": "Kangra painting of a darbar (court) scene with Sansar Chand of Kangra and Jai Singh Kanhaiya, circa 18th or 19th century.webp",
+  "license": "Public domain",
+  "author": "Attributed to either Bassia, the brother of Purkhu, or Bassia's son Shiba",
+  "kb": 144
+ },
+ "madhubani": {
+  "file": "madhubani.jpg",
+  "hi": "मधुबनी चित्रकला",
+  "chapter": "2.5",
+  "commons": "Jadupatua paintings and Madhubani paintings.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Rohini",
+  "kb": 200
+ },
+ "warli": {
+  "file": "warli.jpg",
+  "hi": "वारली चित्रकला",
+  "chapter": "2.5",
+  "commons": "Warli painting.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Omrmankar",
+  "kb": 493
+ },
+ "bharatanatyam": {
+  "file": "bharatanatyam.jpg",
+  "hi": "भरतनाट्यम्",
+  "chapter": "2.5",
+  "commons": "Bharata Natyam Performance DS.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Augustus Binu/ facebook",
+  "kb": 271
+ },
+ "kathak": {
+  "file": "kathak.jpg",
+  "hi": "कथक",
+  "chapter": "2.5",
+  "commons": "Kathak Solo Performance (15).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Suyash Dwivedi",
+  "kb": 315
+ },
+ "stonechariot": {
+  "file": "stonechariot.jpg",
+  "hi": "विट्ठल मंदिर का प्रस्तर रथ",
+  "chapter": "2.2",
+  "commons": "Iconic Stone Chariot @ Vittala Temple, Hampi, Karnataka.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Ram Nagesh Thota",
+  "kb": 253
+ },
+ "vivekananda": {
+  "file": "vivekananda.jpg",
+  "hi": "स्वामी विवेकानंद",
+  "chapter": "2.3",
+  "commons": "Swami Vivekananda 1893 with The East Indian Group.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "kb": 16
+ },
+ "kailasa": {
+  "file": "kailasa.jpg",
+  "hi": "कैलास मंदिर, एलोरा — एकाश्म",
+  "chapter": "2.5",
+  "commons": "Courtyard and Mahabharata Reliefs at the Kailasa Temple, Ellora 01.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rohit Sharma",
+  "kb": 193
+ },
+ "odissi": {
+  "file": "odissi.jpg",
+  "hi": "ओडिसी",
+  "chapter": "2.5",
+  "commons": "Odissi Performance DS.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Augustus Binu/ facebook",
+  "kb": 225
+ }
+}
