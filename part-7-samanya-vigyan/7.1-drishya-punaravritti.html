@@ -1,0 +1,859 @@
+<meta charset="utf-8">
+<title>7.1 मापन, गति एवं यांत्रिकी — दृश्य पुनरावृत्ति</title>
+<link rel="stylesheet" href="../assets/style.css">
+
+<div class="masthead"><div class="inner">
+<p class="kicker">भाग 7 · अध्याय 7.1 · दृश्य पुनरावृत्ति</p>
+<h1>मापन, गति एवं यांत्रिकी — एक नज़र में</h1>
+<p class="sub">सात आरेख · सोलह स्थिरांक · दूरी बनाम विस्थापन · चाल बनाम वेग · अभिकेंद्र बनाम अपकेंद्र · g बनाम G · द्रव्यमान बनाम भार · उत्तोलक के तीन वर्ग · प्लवन एवं बर्नूली · अनुदैर्ध्य बनाम अनुप्रस्थ तरंग · पच्चीस सूत्र एक तालिका में · ग्यारह स्मृति-सूत्र</p>
+</div></div>
+
+<div class="wrap">
+<p><a href="index.html">← भाग 7 की सूची</a> &nbsp;·&nbsp; <a href="7.1-maapan-yantriki.html">पूरा अध्याय पढ़ें →</a></p>
+
+<div class="box"><span class="label">इसे कैसे प्रयोग करें</span>
+<p>यह पृष्ठ पढ़ने के लिए नहीं, <b>दोहराने</b> के लिए है। यहाँ <b>कोई फ़ोटो नहीं</b> और
+<b>कोई मानचित्र नहीं</b> — यांत्रिकी न चेहरा है, न स्थान। पर यहाँ <b>सात आरेख</b> हैं, और वही इस
+पृष्ठ की जान हैं: दूरी बनाम विस्थापन, वृत्तीय गति, उत्तोलक के तीन वर्ग, प्लवन, बर्नूली,
+तरंग के अभिलक्षण तथा अनुदैर्ध्य बनाम अनुप्रस्थ तरंग। इन सात में से हर एक ऐसा भेद दिखाता है
+जो शब्दों से नहीं, केवल चित्र से बैठता है — इसलिए हर आरेख पर कम-से-कम आधा मिनट रुकिए।</p>
+<p><b>शेष औज़ार</b> — <b>पट्टी</b> (आर्किमिडीज़ से 2019 तक), <b>संख्या-पट्टिकाएँ</b> (वे स्थिरांक जो सीधे विकल्प बनते हैं),
+<b>तुलना-कार्ड</b> (वे छह जोड़ियाँ जो परीक्षा में सर्वाधिक भ्रमित करती हैं), <b>वृक्ष</b> (राशियों एवं तरंगों का वर्गीकरण),
+<b>शृंखला</b> (ऊर्जा का रूपांतरण), <b>समयरेखा</b>, <b>सूत्र-तालिका</b> तथा <b>स्मृति-सूत्र</b>।</p>
+<p style="margin-bottom:0"><b>एक चेतावनी पहले ही</b> — इस अध्याय के कई मान <b>शर्त के साथ ही</b> सही हैं।
+ध्वनि की चाल के साथ <em>ताप</em> लिखा है, वायुदाब के साथ <em>ऊँचाई</em>, g के साथ <em>स्थान</em>।
+<b>मान को उसकी शर्त से अलग करके याद न करें</b> — यही इस अध्याय का सबसे बड़ा जाल है।
+इस पृष्ठ का हर आरेख, तुलना-कार्ड, तालिका एवं सूत्र <b>पूरे अध्याय से शब्दशः</b> लिया गया है;
+यहाँ कुछ भी नया गढ़ा नहीं गया, केवल चुना गया है।</p></div>
+
+<h2 id="a">1. आर्किमिडीज़ से 2019 तक — पूरा कालखंड एक पट्टी में</h2>
+<div class="erabar">
+    <span class="e1" style="flex:1.1">~250 ई.पू.<br/>आर्किमिडीज़ — उत्प्लावन एवं उत्तोलक</span>
+    <span class="e2" style="flex:1.3">1609–1656<br/>केप्लर · टॉरिसेली · हाइगेंस</span>
+    <span class="e3" style="flex:.8">1687<br/>न्यूटन का <em>प्रिंसिपिया</em></span>
+    <span class="e4" style="flex:1.2">1738–1842<br/>बर्नूली · कैवेंडिश · डॉप्लर</span>
+    <span class="e5" style="flex:1.2">1875–1960<br/>मीटर संधि → SI पद्धति</span>
+    <span class="e6" style="flex:1.1">2019–2022<br/>नई SI परिभाषाएँ, नए उपसर्ग</span>
+  </div>
+<p style="font-size:.85rem;color:#5a5f66;margin-top:-.4rem">पट्टी के छह खंड ही इस अध्याय का ऐतिहासिक ढाँचा हैं —
+<b>तरल एवं उत्तोलक</b> → <b>प्रेक्षण एवं यंत्र</b> → <b>न्यूटन का संश्लेषण</b> → <b>तरल, गुरुत्व एवं तरंग</b> →
+<b>मात्रकों का अंतरराष्ट्रीयकरण</b> → <b>स्थिरांकों पर आधारित परिभाषाएँ</b>। खंड 13 की समयरेखा इसी पट्टी को
+खोलकर सत्रह तिथियों में बदल देती है।</p>
+
+<h2 id="b">2. सोलह स्थिरांक — जो संख्या सीधे विकल्प बनती है</h2>
+  <div class="stats">
+    <div class="s"><b>9.8 मी/से²</b><span>g — गुरुत्वीय त्वरण (मानक 9.80665)</span></div>
+    <div class="s"><b>6.674 × 10⁻¹¹</b><span>G — सार्वत्रिक गुरुत्वीय स्थिरांक (N·मी²/किग्रा²)</span></div>
+    <div class="s"><b>11.2 किमी/से</b><span>पृथ्वी से पलायन वेग</span></div>
+    <div class="s"><b>7.9 किमी/से</b><span>पृथ्वी के निकट कक्षीय वेग</span></div>
+    <div class="s"><b>331 / 346 मी/से</b><span>वायु में ध्वनि की चाल — 0°C / 25°C पर</span></div>
+    <div class="s"><b>1498 / 5960 मी/से</b><span>आसुत जल / इस्पात में ध्वनि की चाल (25°C)</span></div>
+    <div class="s"><b>3 × 10⁸ मी/से</b><span>निर्वात में प्रकाश की चाल (ठीक 299,792,458)</span></div>
+    <div class="s"><b>20 Hz – 20,000 Hz</b><span>मानव का श्रव्य परास</span></div>
+    <div class="s"><b>17.2 मीटर</b><span>प्रतिध्वनि हेतु न्यूनतम दूरी (0.1 सेकंड की सीमा पर)</span></div>
+    <div class="s"><b>1,01,325 पास्कल</b><span>मानक वायुमंडलीय दाब = 76 सेमी पारा</span></div>
+    <div class="s"><b>746 वाट</b><span>1 अश्व शक्ति (HP)</span></div>
+    <div class="s"><b>3.6 × 10⁶ जूल</b><span>1 किलोवाट-घंटा = बिजली की “एक यूनिट”</span></div>
+    <div class="s"><b>99.4 सेमी</b><span>सेकंड-लोलक की लंबाई (T = 2 सेकंड)</span></div>
+    <div class="s"><b>35,786 किमी</b><span>भू-स्थिर उपग्रह की कक्षा-ऊँचाई</span></div>
+    <div class="s"><b>20 मई 2019</b><span>SI के चार मात्रकों की पुनर्परिभाषा लागू</span></div>
+    <div class="s"><b>6.62607015 × 10⁻³⁴</b><span>प्लांक स्थिरांक — अब इसी से किलोग्राम परिभाषित</span></div>
+  </div>
+<h2 id="c">3. राशि, मात्रक एवं यंत्र</h2>
+<p style="font-size:.88rem;color:#5a5f66;margin-top:-.2rem">पहला प्रश्न सदैव वर्गीकरण का होता है —
+कौन मूल है और कौन व्युत्पन्न, कौन अदिश है और कौन सदिश। यह वृक्ष वही एक चित्र में दे देता है।</p>
+  <div class="tree">
+    <ul>
+      <li><span class="n">भौतिक राशि (Physical Quantity)</span> <span class="d">— वह गुण जिसे मापा जा सके</span>
+        <ul>
+          <li><span class="n">मूल राशियाँ (Fundamental / Base Quantities) — सात</span>
+          <span class="d">एक-दूसरे से स्वतंत्र; किसी अन्य राशि से व्युत्पन्न नहीं — लंबाई, द्रव्यमान, समय, विद्युत धारा, ऊष्मागतिक ताप, पदार्थ की मात्रा, ज्योति तीव्रता</span></li>
+          <li><span class="n">व्युत्पन्न राशियाँ (Derived Quantities)</span>
+          <span class="d">मूल राशियों के गुणा-भाग से बनी — क्षेत्रफल, आयतन, घनत्व, वेग, त्वरण, बल, कार्य, ऊर्जा, शक्ति, दाब, आवृत्ति, संवेग, आवेग, पृष्ठ तनाव, श्यानता</span>
+            <ul>
+              <li><span class="n">अदिश (Scalar)</span> <span class="d">केवल परिमाण — द्रव्यमान, चाल, कार्य, ऊर्जा, शक्ति, दाब, ताप, आयतन, घनत्व, विद्युत धारा</span></li>
+              <li><span class="n">सदिश (Vector)</span> <span class="d">परिमाण + दिशा, और सदिश योग के नियम का पालन — विस्थापन, वेग, त्वरण, बल, भार, संवेग, आवेग, बल-आघूर्ण</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mnemonic"><span class="label">सात मूल मात्रक — 3 + 2 + 2 के समूह में</span>
+  <span class="key">“मी-कि-से · ऐ-के · मो-कै”</span>
+  <p class="exp">पहले <b>तीन यांत्रिकी के</b> — <b>मी</b>टर, <b>कि</b>लोग्राम, <b>से</b>कंड (यही पुरानी MKS पद्धति है);
+  फिर <b>दो विद्युत-ऊष्मा के</b> — <b>ऐ</b>म्पियर, <b>के</b>ल्विन; और अंत में <b>दो पदार्थ-प्रकाश के</b> —
+  <b>मो</b>ल, <b>कै</b>ंडेला। यही 3+2+2 का समूह याद रखिए — प्रश्न प्रायः यही पूछता है कि “निम्नलिखित में से
+  कौन SI का मूल मात्रक नहीं है”, और उत्तर इन सात के बाहर का कोई नाम होता है (न्यूटन, जूल, कूलॉम, वाट, पास्कल)।</p></div>
+  <div class="mnemonic"><span class="label">“-मीटर” वाले यंत्रों की कुंजी — नाम में ही उत्तर छिपा है</span>
+  <span class="key">“नाम का पहला भाग पढ़िए — वही मापी जाने वाली वस्तु है”</span>
+  <p class="exp"><b>लैक्टो</b> = दूध, <b>हाइग्रो</b> = नमी, <b>हाइड्रो</b> = जल/द्रव, <b>एनीमो</b> = पवन,
+  <b>पाइरो</b> = अग्नि/उच्च ताप, <b>सैकैरो</b> = शर्करा, <b>सैलिनो</b> = लवण, <b>टैको</b> = गति (घूर्णन),
+  <b>ओडो</b> = मार्ग/पथ, <b>ऑडियो</b> = श्रवण, <b>फोटो</b> = प्रकाश, <b>सीस्मो</b> = भूकंप,
+  <b>स्फिग्मो</b> = नाड़ी। केवल <b>बैरोमीटर</b> (बैरो = भार/दाब) एवं <b>मैनोमीटर</b> (मैनो = विरल/दाब)
+  को अलग से याद रखिए — “बैरोमीटर <i>बाहर</i> का वायुदाब, मैनोमीटर <i>भीतर</i> बंद गैस का दाब”।</p></div>
+<h2 id="d">4. गति — दूरी बनाम विस्थापन, चाल बनाम वेग</h2>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="दूरी बनाम विस्थापन — वक्र पथ पर चली गई कुल लंबाई दूरी है तथा आरंभ से अंत तक की सरल रेखा विस्थापन है" style="width:100%;height:auto">
+    <rect width="720" height="300" fill="#fbfcfd"/>
+    <path d="M 90 220 C 180 60, 300 60, 360 150 C 420 240, 540 240, 620 130" fill="none" stroke="#8a3324" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="220" x2="620" y2="130" stroke="#1f4e79" stroke-width="4" stroke-dasharray="10 7"/>
+    <polygon points="620,130 604,128 608,142" fill="#1f4e79"/>
+    <circle cx="90" cy="220" r="8" fill="#2f5d3a"/>
+    <circle cx="620" cy="130" r="8" fill="#2f5d3a"/>
+    <text x="70" y="248" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1a1a1a">आरंभ (A)</text>
+    <text x="596" y="112" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1a1a1a">अंत (B)</text>
+    <text x="215" y="70" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">दूरी — पूरा चला हुआ पथ (अदिश)</text>
+    <text x="250" y="205" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">विस्थापन — A से B तक सीधी रेखा (सदिश)</text>
+    <text x="40" y="285" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#444">दूरी सदैव ≥ विस्थापन का परिमाण · दोनों बराबर केवल तब जब गति एक ही दिशा में सरल रेखा में हो</text>
+  </svg>
+  <figcaption>दूरी एवं विस्थापन — वही यात्रा, दो अलग माप। यदि वस्तु A से चलकर घूमकर वापस A पर आ जाए तो
+  <strong>दूरी शून्य नहीं होगी, पर विस्थापन शून्य हो जाएगा</strong>। यही सबसे अधिक पूछा जाने वाला निष्कर्ष है।</figcaption>
+  </figure>
+  <div class="compare">
+    <div class="col a"><h4>दूरी · Distance</h4><ul>
+      <li><b>अदिश</b> — केवल परिमाण</li>
+      <li>वस्तु द्वारा चला गया <b>वास्तविक पथ</b> की कुल लंबाई</li>
+      <li>सदैव <b>धनात्मक</b>; कभी घटती नहीं, केवल बढ़ती है</li>
+      <li>पथ पर निर्भर — दो बिंदुओं के बीच भिन्न मार्गों से भिन्न</li>
+      <li>वृत्ताकार चक्कर पूरा करने पर = परिधि (2πr)</li>
+      <li>ओडोमीटर इसी को मापता है</li>
+    </ul></div>
+    <div class="col b"><h4>विस्थापन · Displacement</h4><ul>
+      <li><b>सदिश</b> — परिमाण + दिशा</li>
+      <li>आरंभिक एवं अंतिम स्थिति को जोड़ने वाली <b>सरल रेखा</b></li>
+      <li><b>धनात्मक, ऋणात्मक या शून्य</b> — कुछ भी हो सकता है</li>
+      <li>पथ पर निर्भर नहीं — केवल आरंभ एवं अंत पर</li>
+      <li>वृत्ताकार चक्कर पूरा करने पर = <b>शून्य</b>; आधा चक्कर पर = 2r (व्यास)</li>
+      <li>न्यूनतम दूरी का माप — इसीलिए |विस्थापन| ≤ दूरी</li>
+    </ul></div>
+  </div>
+  <div class="compare">
+    <div class="col a"><h4>चाल · Speed</h4><ul>
+      <li><b>चाल = दूरी ÷ समय</b> — अदिश राशि</li>
+      <li>सदैव धनात्मक (या शून्य), कभी ऋणात्मक नहीं</li>
+      <li>SI मात्रक <b>मीटर/सेकंड</b>; व्यावहारिक किमी/घंटा</li>
+      <li>स्पीडोमीटर इसे मापता है</li>
+      <li><b>औसत चाल</b> = कुल दूरी ÷ कुल समय</li>
+      <li>पूरे वृत्ताकार चक्कर में औसत चाल <b>शून्य नहीं</b> होती</li>
+    </ul></div>
+    <div class="col b"><h4>वेग · Velocity</h4><ul>
+      <li><b>वेग = विस्थापन ÷ समय</b> — सदिश राशि</li>
+      <li>धनात्मक, ऋणात्मक या शून्य — दिशा के अनुसार</li>
+      <li>SI मात्रक वही <b>मीटर/सेकंड</b></li>
+      <li>दिशा बदलते ही वेग बदल जाता है, चाल चाहे वही रहे</li>
+      <li><b>औसत वेग</b> = कुल विस्थापन ÷ कुल समय</li>
+      <li>पूरे वृत्ताकार चक्कर में औसत वेग <b>शून्य</b> होता है</li>
+    </ul></div>
+  </div>
+  <div class="box trap">
+    <span class="label">सावधानी — चाल एवं वेग के चार निर्णायक भेद</span>
+    <ul>
+      <li><strong>चाल का परिमाण सदैव वेग के परिमाण के बराबर या उससे अधिक होता है</strong> — क्योंकि
+      दूरी ≥ विस्थापन। औसत चाल कभी औसत वेग के परिमाण से कम नहीं हो सकती।</li>
+      <li><strong>तात्क्षणिक चाल = तात्क्षणिक वेग का परिमाण</strong> — किसी एक क्षण पर दोनों बराबर होते हैं।
+      भेद केवल <em>औसत</em> मानों में आता है। यह बारीकी अभिकथन–कारण में पूछी जाती है।</li>
+      <li><strong>समान वेग (uniform velocity)</strong> का अर्थ है — चाल भी स्थिर <em>और</em> दिशा भी स्थिर।
+      इसलिए वृत्तीय गति में चाल समान होते हुए भी वेग समान नहीं होता।</li>
+      <li><strong>औसत चाल “चालों का औसत” नहीं है।</strong> यदि कोई आधी दूरी 40 किमी/घंटा और शेष आधी
+      60 किमी/घंटा से तय करे, तो औसत चाल 50 नहीं, <strong>48 किमी/घंटा</strong> होगी (हरात्मक माध्य:
+      2v₁v₂/(v₁+v₂))। पर यदि आधा <em>समय</em> 40 और आधा समय 60 से चले, तब औसत चाल 50 किमी/घंटा होगी।
+      “दूरी बराबर” और “समय बराबर” — इन दो शब्दों पर पूरा उत्तर बदल जाता है।</li>
+    </ul>
+  </div>
+  <div class="mnemonic"><span class="label">गति के तीन समीकरण — किसमें कौन-सी राशि अनुपस्थित है</span>
+  <span class="key">“पहला बिना दूरी · दूसरा बिना अंतिम वेग · तीसरा बिना समय”</span>
+  <p class="exp"><b>1.</b> <b>v = u + at</b> — इसमें <i>s</i> नहीं है (वेग–समय संबंध)।<br/>
+  <b>2.</b> <b>s = ut + ½at²</b> — इसमें <i>v</i> नहीं है (स्थिति–समय संबंध)।<br/>
+  <b>3.</b> <b>v² = u² + 2as</b> — इसमें <i>t</i> नहीं है (वेग–विस्थापन संबंध)।<br/>
+  इसलिए प्रश्न पढ़कर देखिए कि कौन-सी राशि न दी गई है और न पूछी गई है — वही समीकरण लगाइए।
+  चौथा उपयोगी सूत्र — <b>n-वें सेकंड में तय दूरी: s<sub>n</sub> = u + (a/2)(2n − 1)</b>।</p></div>
+<h2 id="e">5. वृत्तीय गति — और वह बल जो वास्तव में है ही नहीं</h2>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="वृत्तीय गति में अभिकेंद्र बल केंद्र की ओर तथा वेग स्पर्श रेखा की दिशा में होता है" style="width:100%;height:auto">
+    <rect width="720" height="380" fill="#fbfcfd"/>
+    <circle cx="300" cy="190" r="130" fill="none" stroke="#9aa5b1" stroke-width="3" stroke-dasharray="6 6"/>
+    <circle cx="300" cy="190" r="6" fill="#1a1a1a"/>
+    <text x="270" y="215" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1a1a1a">केंद्र</text>
+    <circle cx="430" cy="190" r="12" fill="#8a3324"/>
+    <line x1="430" y1="190" x2="430" y2="70" stroke="#2f5d3a" stroke-width="5"/>
+    <polygon points="430,58 423,76 437,76" fill="#2f5d3a"/>
+    <text x="443" y="80" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">वेग v — स्पर्श रेखा की दिशा में</text>
+    <line x1="418" y1="190" x2="322" y2="190" stroke="#1f4e79" stroke-width="5"/>
+    <polygon points="310,190 328,183 328,197" fill="#1f4e79"/>
+    <text x="330" y="176" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">अभिकेंद्र बल = mv²/r</text>
+    <line x1="300" y1="190" x2="430" y2="190" stroke="#9aa5b1" stroke-width="2"/>
+    <text x="352" y="210" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#555">त्रिज्या r</text>
+    <text x="470" y="250" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">डोरी टूटते ही वस्तु</text>
+    <text x="470" y="272" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">स्पर्श रेखा की दिशा में</text>
+    <text x="470" y="294" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">सीधी उड़ जाती है —</text>
+    <text x="470" y="316" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">बाहर की ओर नहीं</text>
+    <text x="40" y="350" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#444">अभिकेंद्र बल वास्तविक बल है (डोरी का तनाव, घर्षण, गुरुत्व) · अपकेंद्र बल केवल घूमते निर्देश-तंत्र में प्रतीत होने वाला छद्म बल है</text>
+  </svg>
+  <figcaption>वृत्तीय गति — वेग सदैव <strong>स्पर्श रेखा</strong> की दिशा में तथा अभिकेंद्र बल सदैव
+  <strong>केंद्र की ओर</strong>। दोनों परस्पर लंबवत हैं, इसीलिए अभिकेंद्र बल द्वारा किया गया
+  <strong>कार्य शून्य</strong> होता है।</figcaption>
+  </figure>
+  <div class="compare">
+    <div class="col a"><h4>अभिकेंद्र बल · Centripetal Force</h4><ul>
+      <li><b>वास्तविक बल (real force)</b> — किसी न किसी वस्तु द्वारा लगाया जाता है</li>
+      <li>दिशा — सदैव <b>वृत्त के केंद्र की ओर</b></li>
+      <li>परिमाण — <b>F = mv²/r = mω²r</b></li>
+      <li>जड़त्वीय (स्थिर) निर्देश-तंत्र में भी विद्यमान रहता है</li>
+      <li><b>कौन देता है:</b> पत्थर घुमाने में डोरी का तनाव · मोड़ पर कार को सड़क का घर्षण · उपग्रह को पृथ्वी का गुरुत्व · परमाणु में नाभिक का स्थिर-वैद्युत आकर्षण</li>
+      <li>वेग के लंबवत होने से इसका <b>कार्य शून्य</b>; गतिज ऊर्जा नहीं बदलती</li>
+    </ul></div>
+    <div class="col b"><h4>अपकेंद्र बल · Centrifugal Force</h4><ul>
+      <li><b>छद्म / आभासी बल (pseudo force)</b> — कोई वस्तु इसे नहीं लगाती</li>
+      <li>दिशा — <b>केंद्र से बाहर की ओर</b> प्रतीत होती है</li>
+      <li>परिमाण — अभिकेंद्र बल के बराबर, दिशा विपरीत</li>
+      <li>केवल <b>घूमते (अजड़त्वीय) निर्देश-तंत्र</b> में प्रकट होता है — अर्थात् घूमने वाले प्रेक्षक को</li>
+      <li><b>कहाँ अनुभव होता है:</b> मोड़ पर बस में बाहर की ओर झुकना · वॉशिंग मशीन का ड्रायर · दुग्ध-क्रीम विभाजक · प्रयोगशाला का सेंट्रीफ़्यूज</li>
+      <li>न्यूटन की क्रिया-प्रतिक्रिया वाली “प्रतिक्रिया” <b>नहीं</b> है — यह सबसे बड़ा भ्रम है</li>
+    </ul></div>
+  </div>
+  <div class="box trap">
+    <span class="label">सावधानी — अपकेंद्र बल पर तीन क्लासिक गलतियाँ</span>
+    <ul>
+      <li><strong>“डोरी टूटने पर पत्थर बाहर की ओर उड़ जाता है”</strong> — <em>गलत</em>। वह उस बिंदु की
+      <strong>स्पर्श रेखा (tangent)</strong> की दिशा में सीधा उड़ता है, त्रिज्या की दिशा में नहीं। इसी कारण
+      गीली साइकिल के पहिये से कीचड़ स्पर्शरेखीय दिशा में उड़ता है, और इसीलिए पहिये पर मडगार्ड लगाया जाता है।</li>
+      <li><strong>“अभिकेंद्र एवं अपकेंद्र बल क्रिया-प्रतिक्रिया युग्म हैं”</strong> — <em>गलत</em>। क्रिया-प्रतिक्रिया
+      सदैव <em>दो भिन्न वस्तुओं</em> पर लगती हैं; यहाँ दोनों एक ही वस्तु पर बताए जा रहे हैं, और एक तो
+      वास्तविक बल ही नहीं है।</li>
+      <li><strong>“अभिकेंद्र बल कार्य करता है”</strong> — <em>गलत</em>। बल एवं विस्थापन के बीच कोण 90° होने से
+      कार्य = Fs·cos90° = शून्य। इसी कारण एकसमान वृत्तीय गति में चाल एवं गतिज ऊर्जा नहीं बदलती।
+      चंद्रमा पृथ्वी की परिक्रमा करता है पर पृथ्वी का गुरुत्व उस पर कोई कार्य नहीं करता — यही उदाहरण पूछा जाता है।</li>
+    </ul>
+  </div>
+<h2 id="f">6. न्यूटन के तीन नियम — और सड़क पर उनका अर्थ</h2>
+  <div class="mnemonic"><span class="label">न्यूटन के तीन नियम — एक पंक्ति में</span>
+  <span class="key">“जड़ता · बल = संवेग-दर · जोड़ी में बल”</span>
+  <p class="exp"><b>जड़ता</b> = प्रथम नियम (जड़त्व का नियम — बल की गुणात्मक परिभाषा) →
+  <b>बल = संवेग-दर</b> = द्वितीय नियम (F = Δp/Δt = ma — बल की मात्रात्मक परिभाषा, जिससे “न्यूटन” बनता है) →
+  <b>जोड़ी में बल</b> = तृतीय नियम (बल कभी अकेला नहीं आता, सदैव युग्म में — और दोनों भिन्न वस्तुओं पर)।
+  ध्यान रखिए: <b>द्वितीय नियम सबसे मौलिक है</b>, क्योंकि उससे प्रथम नियम (F = 0 ⇒ a = 0) निकल आता है।</p></div>
+  <div class="box up">
+    <span class="label">उत्तर प्रदेश संदर्भ — गति, जड़त्व एवं सड़क सुरक्षा</span>
+    <p>सड़क दुर्घटनाओं की भौतिकी ठीक इसी खंड की है — <em>अति-गति</em> (गतिज ऊर्जा v² के अनुपात में),
+    <em>मोड़ पर अपकेंद्र प्रभाव</em>, तथा <em>जड़त्व</em> (टक्कर के समय शरीर का आगे बढ़ते रहना)।
+    सड़क परिवहन एवं राजमार्ग मंत्रालय की <strong>“Road Accidents in India 2023”</strong> रिपोर्ट के अनुसार —</p>
+    <ul>
+      <li>देश में 2023 में <strong>4,80,583 दुर्घटनाएँ</strong> हुईं और <strong>1,72,890 लोगों की मृत्यु</strong> हुई।</li>
+      <li><strong>उत्तर प्रदेश में सर्वाधिक मृत्यु — 23,652</strong> (लगभग 44,000 दुर्घटनाएँ), जो देश में
+      किसी भी राज्य से अधिक है।</li>
+      <li><strong>68% मृत्यु का कारण अति-गति (overspeeding)</strong> रहा; <strong>44.8% मृतक दुपहिया वाहन</strong>
+      सवार थे तथा 20.4% पैदल यात्री।</li>
+      <li>इसीलिए <em>हेलमेट</em> (टक्कर का समय बढ़ाकर बल घटाना — आवेग-संवेग सिद्धांत) एवं
+      <em>सीट बेल्ट</em> (जड़त्व से आगे बढ़ते शरीर को रोकना) अनिवार्य हैं। यह ठीक वही भौतिकी है जो
+      अगले खंड में न्यूटन के द्वितीय नियम के रूप में आ रही है।</li>
+    </ul>
+    <p>प्रदेश का <strong>उत्तर प्रदेश सड़क सुरक्षा कोष</strong> तथा जनपद स्तरीय सड़क सुरक्षा समितियाँ इसी
+    समस्या के लिए बनी हैं — यह तथ्य सामान्य विज्ञान एवं UP-विशिष्ट, दोनों प्रकार के प्रश्नों में काम आता है।
+    <em>(स्रोत — MoRTH, Road Accidents in India 2023, अगस्त 2025 में जारी)</em></p>
+  </div>
+<h2 id="g">7. गुरुत्वाकर्षण — g बनाम G, द्रव्यमान बनाम भार</h2>
+<p style="font-size:.88rem;color:#5a5f66;margin-top:-.2rem">इस अध्याय के दो सर्वाधिक पूछे जाने वाले भेद यहीं हैं।
+दोनों तुलना-कार्ड साथ-साथ पढ़िए — बाईं ओर सदैव वह है जो <b>नहीं बदलता</b>, दाईं ओर वह जो <b>बदलता है</b>।</p>
+  <div class="compare">
+    <div class="col a"><h4>G — सार्वत्रिक गुरुत्वीय स्थिरांक</h4><ul>
+      <li>पूरा नाम — <b>Universal Gravitational Constant</b></li>
+      <li>मान — <b>6.674 × 10⁻¹¹ न्यूटन·मी²/किग्रा²</b></li>
+      <li><b>अदिश</b> राशि</li>
+      <li><b>सार्वत्रिक स्थिरांक</b> — ब्रह्मांड में हर जगह, हर समय एक ही</li>
+      <li>न ग्रह पर निर्भर, न ऊँचाई पर, न माध्यम पर</li>
+      <li>विमीय सूत्र <b>[M⁻¹L³T⁻²]</b></li>
+      <li>पहली बार प्रयोगशाला में मापा — <b>हेनरी कैवेंडिश (1798)</b>, मरोड़ तुला (torsion balance) से; इसी को “पृथ्वी को तौलना” कहा गया</li>
+    </ul></div>
+    <div class="col b"><h4>g — गुरुत्वीय त्वरण</h4><ul>
+      <li>पूरा नाम — <b>Acceleration due to gravity</b></li>
+      <li>पृथ्वी पर औसत मान — <b>9.8 मी/से²</b> (मानक मान 9.80665)</li>
+      <li><b>सदिश</b> राशि — दिशा पृथ्वी के केंद्र की ओर</li>
+      <li><b>स्थानीय मान</b> — स्थान-स्थान पर बदलता है</li>
+      <li>g = GM/R² — अतः ग्रह के द्रव्यमान एवं त्रिज्या पर निर्भर</li>
+      <li>विमीय सूत्र <b>[LT⁻²]</b> — त्वरण जैसा</li>
+      <li>चंद्रमा पर ≈ 1.62 मी/से² (पृथ्वी का लगभग <b>1/6</b>); बृहस्पति पर सर्वाधिक</li>
+    </ul></div>
+  </div>
+  <div class="box trap">
+    <span class="label">सावधानी — g पर तीन बहु-पूछित तथ्य</span>
+    <ul>
+      <li><strong>g वस्तु के द्रव्यमान पर निर्भर नहीं करता।</strong> इसीलिए भारी और हल्की वस्तु (वायु-प्रतिरोध की
+      उपेक्षा करने पर) एक साथ गिरती हैं।</li>
+      <li><strong>“g सार्वत्रिक स्थिरांक है” — यह कथन गलत है।</strong> सार्वत्रिक स्थिरांक G है, g नहीं।
+      यह अभिकथन–कारण में बहुत आता है।</li>
+      <li><strong>चंद्रमा पर g पृथ्वी का लगभग 1/6 है</strong>, इसलिए वहाँ भार 1/6 रह जाता है — पर
+      <em>द्रव्यमान वही रहता है</em>।</li>
+    </ul>
+  </div>
+  <div class="mnemonic"><span class="label">g कहाँ सबसे अधिक — एक पंक्ति में</span>
+  <span class="key">“ध्रुव पर सबसे भारी, भूमध्य रेखा पर सबसे हल्का, केंद्र पर भारहीन”</span>
+  <p class="exp">पृथ्वी की सतह पर g का <b>अधिकतम</b> मान <b>ध्रुवों</b> पर है (त्रिज्या न्यूनतम + घूर्णन का प्रभाव शून्य),
+  <b>न्यूनतम</b> <b>भूमध्य रेखा</b> पर (त्रिज्या अधिकतम + घूर्णन का प्रभाव अधिकतम)। सतह से ऊपर जाएँ तो
+  g घटता है, नीचे जाएँ तब भी घटता है — अर्थात् <b>g पृथ्वी की सतह पर अधिकतम है</b>, और
+  <b>केंद्र पर ठीक शून्य</b>। इसीलिए यदि कोई व्यक्ति पृथ्वी के केंद्र पर पहुँच जाए तो उसका
+  <b>भार शून्य हो जाएगा, द्रव्यमान नहीं</b>।</p></div>
+  <div class="compare">
+    <div class="col a"><h4>द्रव्यमान · Mass</h4><ul>
+      <li>वस्तु में उपस्थित <b>पदार्थ की मात्रा</b></li>
+      <li><b>अदिश</b> राशि</li>
+      <li>SI मात्रक <b>किलोग्राम (kg)</b></li>
+      <li><b>कहीं नहीं बदलता</b> — पृथ्वी, चंद्रमा, अंतरिक्ष, सब जगह वही</li>
+      <li><b>कभी शून्य नहीं</b> होता</li>
+      <li><b>भौतिक/तुला संतुलन (beam balance)</b> से मापा जाता है</li>
+      <li>यह वस्तु के <b>जड़त्व की माप</b> है</li>
+    </ul></div>
+    <div class="col b"><h4>भार · Weight</h4><ul>
+      <li>वह <b>बल</b> जिससे पृथ्वी वस्तु को अपने केंद्र की ओर खींचती है</li>
+      <li><b>सदिश</b> राशि — दिशा नीचे की ओर</li>
+      <li>SI मात्रक <b>न्यूटन (N)</b>; W = mg</li>
+      <li><b>स्थान के साथ बदलता है</b> — चंद्रमा पर 1/6, ध्रुव पर अधिक, भूमध्य रेखा पर कम</li>
+      <li><b>शून्य हो सकता है</b> — पृथ्वी के केंद्र पर, तथा मुक्त पतन/उपग्रह में</li>
+      <li><b>कमानीदार तुला (spring balance)</b> से मापा जाता है</li>
+      <li>यह वस्तु पर लगे <b>गुरुत्व बल की माप</b> है</li>
+    </ul></div>
+  </div>
+  <div class="box trap">
+    <span class="label">सावधानी — “मेरा वज़न 60 किलो है” — यह वाक्य भौतिकी की दृष्टि से गलत है</span>
+    <ul>
+      <li>60 किलोग्राम <em>द्रव्यमान</em> है। उस व्यक्ति का <em>भार</em> = 60 × 9.8 = <strong>588 न्यूटन</strong> होगा।
+      दैनिक भाषा में “वज़न” कहते हैं, पर परीक्षा में मात्रक देखकर उत्तर दीजिए — <strong>किलोग्राम में भार
+      कभी नहीं लिखा जाता</strong>।</li>
+      <li><strong>चंद्रमा पर जाने से द्रव्यमान नहीं बदलता, भार 1/6 रह जाता है।</strong> यदि पृथ्वी पर किसी का
+      भार 600 N है तो चंद्रमा पर 100 N होगा, पर द्रव्यमान दोनों जगह ≈ 61 किग्रा।</li>
+      <li><strong>तुला (beam balance) पर चंद्रमा पर भी वही पाठ्यांक आएगा</strong>, क्योंकि वह द्रव्यमानों की
+      तुलना करती है और दोनों पलड़ों पर g समान रूप से घटता है। पर <strong>कमानीदार तुला (spring balance)
+      का पाठ्यांक 1/6 रह जाएगा</strong>। यह प्रश्न बार-बार आता है।</li>
+      <li><strong>“भार सदैव नीचे की ओर होता है” — यह अधूरा है।</strong> भार सदैव <em>पृथ्वी के केंद्र की ओर</em>
+      होता है; “नीचे” का अर्थ ही यही है।</li>
+    </ul>
+  </div>
+  <div class="stats">
+    <div class="s"><b>11.2 किमी/से</b><span>पृथ्वी से पलायन वेग (≈ 40,320 किमी/घंटा)</span></div>
+    <div class="s"><b>7.9 किमी/से</b><span>पृथ्वी के निकट कक्षीय वेग</span></div>
+    <div class="s"><b>2.38 किमी/से</b><span>चंद्रमा से पलायन वेग — इसीलिए वहाँ वायुमंडल नहीं</span></div>
+    <div class="s"><b>≈ 59.5 किमी/से</b><span>बृहस्पति से पलायन वेग (सौरमंडल के ग्रहों में अधिकतम)</span></div>
+    <div class="s"><b>≈ 618 किमी/से</b><span>सूर्य से पलायन वेग</span></div>
+    <div class="s"><b>35,786 किमी</b><span>भूस्थिर उपग्रह की ऊँचाई (भूमध्य रेखा के ऊपर)</span></div>
+  </div>
+  <div class="mnemonic"><span class="label">केप्लर के तीन नियम — क्रम में</span>
+  <span class="key">“कक्षा · क्षेत्रफल · काल”</span>
+  <p class="exp"><b>कक्षा</b> (दीर्घवृत्त, सूर्य नाभि पर) → <b>क्षेत्रफल</b> (समान समय में समान क्षेत्रफल —
+  अतः उपसौर पर तेज़) → <b>काल</b> (T² ∝ a³)। तीनों “क” से आरंभ होते हैं और यही 1-2-3 का क्रम है।
+  ध्यान रखिए — <b>पहले दो नियम 1609 में, तीसरा 1619 में</b> आया; और तीनों <b>न्यूटन से पहले</b> के हैं।</p></div>
+<h2 id="h">8. कार्य, ऊर्जा एवं शक्ति</h2>
+  <div class="tree">
+    <ul>
+      <li><span class="n">ऊर्जा (Energy)</span> <span class="d">— सभी रूपों का मात्रक जूल</span>
+        <ul>
+          <li><span class="n">यांत्रिक ऊर्जा</span> <span class="d">गतिज + स्थितिज — पवन, जल-प्रपात, घूमता पहिया, कमानी</span></li>
+          <li><span class="n">ऊष्मीय ऊर्जा</span> <span class="d">अणुओं की अनियमित गति की कुल ऊर्जा — कोयला, ईंधन, भाप (विस्तार 7.2 में)</span></li>
+          <li><span class="n">प्रकाश ऊर्जा</span> <span class="d">विद्युत-चुंबकीय विकिरण का दृश्य भाग — सूर्य, दीपक, LED</span></li>
+          <li><span class="n">ध्वनि ऊर्जा</span> <span class="d">माध्यम के कणों के कंपन से संचरित — यह ऊर्जा का अत्यंत क्षीण रूप है</span></li>
+          <li><span class="n">रासायनिक ऊर्जा</span> <span class="d">रासायनिक बंधों में संचित — भोजन, ईंधन, बैटरी, विस्फोटक</span></li>
+          <li><span class="n">विद्युत ऊर्जा</span> <span class="d">आवेशों की गति से — सबसे सुविधाजनक रूप, क्योंकि इसे दूर तक भेजा एवं आसानी से अन्य रूपों में बदला जा सकता है</span></li>
+          <li><span class="n">चुंबकीय ऊर्जा</span> <span class="d">चुंबकीय क्षेत्र में संचित</span></li>
+          <li><span class="n">नाभिकीय ऊर्जा</span> <span class="d">नाभिक के विखंडन (fission) या संलयन (fusion) से — सर्वाधिक सघन रूप; E = mc²</span></li>
+          <li><span class="n">सौर ऊर्जा</span> <span class="d">सूर्य में हो रहे नाभिकीय संलयन से — पृथ्वी पर लगभग सभी ऊर्जा का मूल स्रोत</span></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<p style="font-size:.88rem;color:#5a5f66;margin-top:-.2rem">ऊर्जा नष्ट नहीं होती, केवल रूप बदलती है —
+नीचे की दो शृंखलाएँ यही क्रम दिखाती हैं। दूसरी शृंखला जलविद्युत का पूरा सिद्धांत है।</p>
+  <div class="flow">
+    <div class="step"><b>सूर्य</b>नाभिकीय संलयन → प्रकाश एवं ऊष्मा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>पौधा</b>प्रकाश संश्लेषण → रासायनिक ऊर्जा (भोजन)</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>मनुष्य/पशु</b>पाचन → पेशीय (यांत्रिक) ऊर्जा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>कार्य</b>यांत्रिक ऊर्जा → उपयोगी कार्य + ऊष्मा</div>
+  </div>
+
+  <div class="flow">
+    <div class="step"><b>बाँध का जल</b>गुरुत्वीय स्थितिज ऊर्जा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>गिरता जल</b>गतिज ऊर्जा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>टरबाइन</b>घूर्णन — यांत्रिक ऊर्जा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>जनित्र (डायनेमो)</b>विद्युत ऊर्जा</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>घर में</b>प्रकाश · ऊष्मा · ध्वनि · यांत्रिक</div>
+  </div>
+<h2 id="i">9. घर्षण एवं सरल मशीनें</h2>
+  <div class="mnemonic"><span class="label">घर्षण के परिमाण का क्रम</span>
+  <span class="key">“सीमांत &gt; सर्पी &gt; लोटनिक”</span>
+  <p class="exp">स्थैतिक (सीमांत) घर्षण सबसे अधिक, सर्पी उससे कम, और <b>लोटनिक सबसे कम</b>।
+  यही एक वाक्य <b>पहिये के आविष्कार</b> का पूरा महत्व समझा देता है — घिसटने के स्थान पर लुढ़काने से
+  घर्षण नाटकीय रूप से घट जाता है। इसी सिद्धांत पर <b>बॉल बेयरिंग</b> काम करती है और इसीलिए
+  भारी सामान को पहियों वाली ट्रॉली पर रखा जाता है।</p></div>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 760 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="उत्तोलक के तीन वर्ग — आलंब भार एवं प्रयास की सापेक्ष स्थिति दर्शाने वाला आरेख" style="width:100%;height:auto">
+    <rect width="760" height="760" fill="#fbfcfd"/>
+
+    <text x="20" y="38" font-size="21" font-weight="bold" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79">प्रथम वर्ग — बीच में आलंब</text>
+    <text x="178" y="72" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">भार</text>
+    <line x1="200" y1="80" x2="200" y2="110" stroke="#8a3324" stroke-width="5"/>
+    <polygon points="200,120 191,102 209,102" fill="#8a3324"/>
+    <text x="498" y="72" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">प्रयास</text>
+    <line x1="530" y1="80" x2="530" y2="110" stroke="#2f5d3a" stroke-width="5"/>
+    <polygon points="530,120 521,102 539,102" fill="#2f5d3a"/>
+    <rect x="170" y="122" width="390" height="10" rx="3" fill="#5b4636"/>
+    <polygon points="365,134 343,166 387,166" fill="#1f4e79"/>
+    <text x="330" y="188" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">आलंब</text>
+    <text x="20" y="218" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#333">उदाहरण — कैंची · सी-सॉ (झूला) · प्लास · तराजू · हैंडपंप का हत्था · कील उखाड़ने वाला पंजा</text>
+
+    <line x1="20" y1="240" x2="740" y2="240" stroke="#d6dce2" stroke-width="2"/>
+
+    <text x="20" y="284" font-size="21" font-weight="bold" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79">द्वितीय वर्ग — बीच में भार</text>
+    <text x="318" y="318" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">भार</text>
+    <line x1="340" y1="326" x2="340" y2="356" stroke="#8a3324" stroke-width="5"/>
+    <polygon points="340,366 331,348 349,348" fill="#8a3324"/>
+    <rect x="170" y="368" width="390" height="10" rx="3" fill="#5b4636"/>
+    <polygon points="185,380 163,412 207,412" fill="#1f4e79"/>
+    <text x="140" y="434" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">आलंब</text>
+    <line x1="530" y1="432" x2="530" y2="398" stroke="#2f5d3a" stroke-width="5"/>
+    <polygon points="530,386 521,404 539,404" fill="#2f5d3a"/>
+    <text x="498" y="454" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">प्रयास</text>
+    <text x="20" y="480" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#333">उदाहरण — ठेला (व्हीलबैरो) · सरौता (नट क्रैकर) · बोतल का ढक्कन खोलने वाला ओपनर · काग़ज़ काटने की मशीन</text>
+
+    <line x1="20" y1="500" x2="740" y2="500" stroke="#d6dce2" stroke-width="2"/>
+
+    <text x="20" y="544" font-size="21" font-weight="bold" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79">तृतीय वर्ग — बीच में प्रयास</text>
+    <text x="508" y="578" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">भार</text>
+    <line x1="530" y1="586" x2="530" y2="616" stroke="#8a3324" stroke-width="5"/>
+    <polygon points="530,626 521,608 539,608" fill="#8a3324"/>
+    <rect x="170" y="628" width="390" height="10" rx="3" fill="#5b4636"/>
+    <polygon points="185,640 163,672 207,672" fill="#1f4e79"/>
+    <text x="140" y="694" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">आलंब</text>
+    <line x1="340" y1="692" x2="340" y2="658" stroke="#2f5d3a" stroke-width="5"/>
+    <polygon points="340,646 331,664 349,664" fill="#2f5d3a"/>
+    <text x="302" y="714" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">प्रयास</text>
+    <text x="20" y="744" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#333">उदाहरण — चिमटा · मछली पकड़ने की छड़ · झाड़ू · फावड़ा · मानव अग्रबाहु (कोहनी आलंब, पेशी प्रयास)</text>
+  </svg>
+  <figcaption>उत्तोलक के तीन वर्ग — भेद केवल इतना है कि <strong>बीच में कौन है</strong>।
+  <strong>यांत्रिक लाभ:</strong> प्रथम वर्ग में 1 से अधिक भी हो सकता है और कम भी (आलंब की स्थिति पर निर्भर);
+  <strong>द्वितीय वर्ग में सदैव 1 से अधिक</strong> (इसीलिए कम बल से अधिक भार); तथा
+  <strong>तृतीय वर्ग में सदैव 1 से कम</strong> — यहाँ बल की बचत नहीं होती, पर <em>गति एवं परास</em> की बचत होती है,
+  इसीलिए शरीर की अधिकांश पेशियाँ तृतीय वर्ग के उत्तोलक की तरह काम करती हैं।</figcaption>
+  </figure>
+  <div class="mnemonic"><span class="label">उत्तोलक के तीन वर्ग — कौन बीच में</span>
+  <span class="key">“आ · भा · प्र”</span>
+  <p class="exp"><b>आ</b>लंब बीच में = <b>प्रथम</b> वर्ग (कैंची, सी-सॉ) → <b>भा</b>र बीच में = <b>द्वितीय</b> वर्ग
+  (ठेला, नट क्रैकर) → <b>प्र</b>यास बीच में = <b>तृतीय</b> वर्ग (चिमटा, अग्रबाहु)।
+  “आ-भा-प्र” ही 1-2-3 का क्रम है — बस यही तीन अक्षर याद रखिए, पूरी तालिका खुल जाएगी।</p></div>
+  <div class="box up">
+    <span class="label">उत्तर प्रदेश संदर्भ — घर्षण एवं सरल मशीनें जो प्रदेश की अर्थव्यवस्था चलाती हैं</span>
+    <ul>
+      <li><strong>ढेंकली एवं रहट</strong> — पश्चिमी उत्तर प्रदेश एवं अवध की परंपरागत सिंचाई-युक्तियाँ।
+      <em>ढेंकली</em> प्रथम वर्ग का उत्तोलक है (आलंब बीच में, एक सिरे पर बाल्टी = भार, दूसरे सिरे पर
+      पत्थर/मिट्टी का प्रतिभार); <em>रहट</em> “पहिया एवं धुरी” तथा घिरनी का संयोग है। ये आज भी गाँवों में
+      सरल मशीन का जीवंत उदाहरण हैं।</li>
+      <li><strong>कोल्हू एवं गन्ना-क्रशर</strong> — प्रदेश की गुड़-खांडसारी अर्थव्यवस्था की रीढ़; यहाँ
+      पहिया-धुरी एवं लीवर दोनों काम करते हैं। उत्तर प्रदेश देश का <strong>सबसे बड़ा गन्ना एवं चीनी
+      उत्पादक</strong> राज्य है, और <em>राष्ट्रीय शर्करा संस्थान, कानपुर</em> इसी प्रौद्योगिकी का राष्ट्रीय केंद्र है।</li>
+      <li><strong>कानपुर का चर्म-उद्योग</strong> — चमड़े की “घर्षण-प्रतिरोधकता” (abrasion resistance) उसकी
+      गुणवत्ता का मानक है; जूते के तलवे का सारा विज्ञान घर्षण का ही है। कानपुर में
+      <em>केंद्रीय चर्म अनुसंधान संस्थान (CLRI) का क्षेत्रीय केंद्र</em> तथा
+      <em>भारतीय पादत्राण अभिकल्प एवं विकास संस्थान (FDDI), नोएडा</em> इसी क्षेत्र के संस्थान हैं।</li>
+      <li><strong>मुरादाबाद का पीतल, फ़िरोज़ाबाद का काँच, वाराणसी का हथकरघा</strong> — तीनों ODOP उद्योगों में
+      पच्चर, उत्तोलक एवं घिरनी का नित्य प्रयोग होता है; हथकरघे का पूरा ढाँचा ही उत्तोलकों एवं
+      घिरनियों का संयोजन है।</li>
+    </ul>
+  </div>
+<h2 id="j">10. दाब एवं तरल — प्लवन तथा बर्नूली</h2>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 780 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="प्लवन — तैरती वस्तु पर ऊपर की ओर उत्प्लावन बल तथा नीचे की ओर भार" style="width:100%;height:auto">
+    <rect width="780" height="430" fill="#fbfcfd"/>
+    <rect x="30" y="200" width="720" height="180" fill="#d7e9f7"/>
+    <line x1="30" y1="200" x2="750" y2="200" stroke="#4a89b8" stroke-width="3"/>
+    <line x1="330" y1="320" x2="330" y2="110" stroke="#1f4e79" stroke-width="6"/>
+    <polygon points="330,96 320,118 340,118" fill="#1f4e79"/>
+    <line x1="395" y1="110" x2="395" y2="320" stroke="#8a3324" stroke-width="6"/>
+    <polygon points="395,334 385,312 405,312" fill="#8a3324"/>
+    <rect x="255" y="150" width="215" height="100" fill="#c9a227" fill-opacity="0.45" stroke="#8a6d1f" stroke-width="3"/>
+    <text x="55" y="150" font-size="18" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#555">वायु</text>
+    <text x="55" y="300" font-size="18" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2b5f86">जल</text>
+    <text x="620" y="192" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2b5f86">जल की सतह</text>
+    <text x="105" y="103" font-size="18" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">उत्प्लावन बल B</text>
+    <text x="60" y="128" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79">(= विस्थापित जल का भार)</text>
+    <text x="415" y="328" font-size="18" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">भार W = mg</text>
+    <text x="495" y="145" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#333">डूबा भाग ÷ कुल आयतन</text>
+    <text x="495" y="170" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#333">= वस्तु का घनत्व ÷ द्रव का घनत्व</text>
+    <text x="30" y="415" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#444">तैरती वस्तु की साम्यावस्था — B = W · यदि B &lt; W तो वस्तु डूब जाएगी · यदि B &gt; W तो वह ऊपर उठकर आंशिक रूप से बाहर आ जाएगी</text>
+  </svg>
+  <figcaption>प्लवन का संतुलन — तैरती वस्तु पर दो ही ऊर्ध्वाधर बल हैं: नीचे की ओर <strong>भार</strong> और
+  ऊपर की ओर <strong>उत्प्लावन बल</strong>। तैरती अवस्था में दोनों बराबर होते हैं, इसीलिए वस्तु का
+  <strong>आभासी भार शून्य</strong> हो जाता है। वस्तु का कितना भाग डूबेगा, यह केवल दोनों के घनत्वों के अनुपात से तय होता है।</figcaption>
+  </figure>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 760 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="बर्नूली का सिद्धांत — वायुयान के पंख पर ऊपर वायु तेज़ एवं दाब कम तथा नीचे वायु धीमी एवं दाब अधिक होने से उत्थापन बल" style="width:100%;height:auto">
+    <rect width="760" height="350" fill="#fbfcfd"/>
+    <text x="40" y="30" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold">ऊपर की वक्र सतह — वायु को अधिक दूरी तय करनी पड़ती है ⇒ चाल अधिक ⇒ दाब कम</text>
+    <path d="M40,108 C 250,72 460,76 720,122" fill="none" stroke="#4a89b8" stroke-width="2.5"/>
+    <path d="M40,130 C 250,90 460,94 720,142" fill="none" stroke="#4a89b8" stroke-width="2.5"/>
+    <path d="M40,152 C 250,107 460,112 720,162" fill="none" stroke="#4a89b8" stroke-width="2.5"/>
+    <polygon points="726,122 710,116 712,128" fill="#4a89b8"/>
+    <polygon points="726,142 710,136 712,148" fill="#4a89b8"/>
+    <polygon points="726,162 710,156 712,168" fill="#4a89b8"/>
+    <path d="M180,200 C 300,142 470,148 600,196 C 460,216 300,218 180,200 Z" fill="#c9a227" fill-opacity="0.55" stroke="#8a6d1f" stroke-width="3"/>
+    <text x="330" y="196" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#5b4636">पंख</text>
+    <path d="M40,240 C 250,256 460,258 720,244" fill="none" stroke="#8a3324" stroke-width="2.5"/>
+    <path d="M40,284 C 250,298 460,300 720,286" fill="none" stroke="#8a3324" stroke-width="2.5"/>
+    <polygon points="726,244 710,238 712,250" fill="#8a3324"/>
+    <polygon points="726,286 710,280 712,292" fill="#8a3324"/>
+    <line x1="390" y1="180" x2="390" y2="66" stroke="#fbfcfd" stroke-width="12"/>
+    <line x1="390" y1="180" x2="390" y2="66" stroke="#2f5d3a" stroke-width="6"/>
+    <polygon points="390,52 379,76 401,76" fill="#2f5d3a"/>
+    <text x="406" y="64" font-size="18" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">उत्थापन बल (Lift)</text>
+    <text x="40" y="332" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold">नीचे की सपाट सतह — वायु की चाल कम ⇒ दाब अधिक ⇒ पंख ऊपर की ओर धकेला जाता है</text>
+  </svg>
+  <figcaption>वायुयान के पंख (aerofoil) का अनुप्रस्थ काट — ऊपर की धारा-रेखाएँ पास-पास हैं (चाल अधिक, दाब कम),
+  नीचे की दूर-दूर (चाल कम, दाब अधिक)। नीचे-ऊपर का यही <strong>दाबांतर</strong> ऊपर की ओर
+  <strong>उत्थापन बल</strong> देता है। यही कारण है कि वायुयान उड़ान भरते समय <em>हवा के विरुद्ध</em> दौड़ाया जाता है —
+  सापेक्ष वायु-वेग बढ़ने से उत्थापन बढ़ जाता है।</figcaption>
+  </figure>
+<h2 id="k">11. तरंग — दो आरेख जो पूरा वर्गीकरण खोल देते हैं</h2>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="तरंग का आरेख — शृंग गर्त आयाम एवं तरंगदैर्घ्य एक ही चित्र में नामांकित" style="width:100%;height:auto">
+    <rect width="800" height="360" fill="#fbfcfd"/>
+    <line x1="70" y1="180" x2="740" y2="180" stroke="#9aa5b1" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="8" y="176" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#666">माध्य स्थिति</text>
+    <path d="M110,180 C 140,80 200,80 230,180 C 260,280 320,280 350,180 C 380,80 440,80 470,180 C 500,280 560,280 590,180 C 620,80 680,80 710,180" fill="none" stroke="#1f4e79" stroke-width="4"/>
+    <text x="170" y="88" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold" text-anchor="middle">शृंग</text>
+    <text x="290" y="298" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold" text-anchor="middle">गर्त</text>
+    <text x="650" y="88" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold" text-anchor="middle">शृंग</text>
+    <text x="530" y="298" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold" text-anchor="middle">गर्त</text>
+    <line x1="410" y1="180" x2="410" y2="106" stroke="#5b2d5b" stroke-width="3"/>
+    <polygon points="410,100 404,116 416,116" fill="#5b2d5b"/>
+    <polygon points="410,186 404,170 416,170" fill="#5b2d5b"/>
+    <text x="420" y="146" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#5b2d5b" font-weight="bold">आयाम (a)</text>
+    <line x1="170" y1="55" x2="410" y2="55" stroke="#8a6d1f" stroke-width="3"/>
+    <polygon points="164,55 180,49 180,61" fill="#8a6d1f"/>
+    <polygon points="416,55 400,49 400,61" fill="#8a6d1f"/>
+    <text x="290" y="44" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a6d1f" font-weight="bold" text-anchor="middle">तरंगदैर्घ्य (λ) — शृंग से शृंग तक</text>
+    <line x1="290" y1="322" x2="530" y2="322" stroke="#8a6d1f" stroke-width="3"/>
+    <polygon points="284,322 300,316 300,328" fill="#8a6d1f"/>
+    <polygon points="536,322 520,316 520,328" fill="#8a6d1f"/>
+    <text x="410" y="348" font-size="17" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a6d1f" font-weight="bold" text-anchor="middle">गर्त से गर्त तक की दूरी भी तरंगदैर्घ्य ही है</text>
+  </svg>
+  <figcaption>तरंग के चारों अभिलक्षण एक चित्र में — माध्य स्थिति से ऊपर का उभार <strong>शृंग (crest)</strong>,
+  नीचे का गड्ढा <strong>गर्त (trough)</strong>, माध्य स्थिति से अधिकतम विस्थापन <strong>आयाम</strong>, तथा
+  दो क्रमागत शृंगों (या दो क्रमागत गर्तों) के बीच की दूरी <strong>तरंगदैर्घ्य</strong>। ध्यान दीजिए —
+  <strong>तरंगदैर्घ्य शृंग से गर्त तक की दूरी नहीं है</strong>, वह तो आधी तरंगदैर्घ्य होती है। यही सबसे आम भूल है।</figcaption>
+  </figure>
+  <div class="tree">
+    <ul>
+      <li><span class="n">तरंग (Wave)</span>
+        <ul>
+          <li><span class="n">यांत्रिक तरंग (Mechanical / Elastic wave)</span>
+          <span class="d">संचरण के लिए <b>माध्यम अनिवार्य</b>; निर्वात में नहीं चल सकती — ध्वनि, जल-तरंग, भूकंपीय तरंग, डोरी की तरंग</span>
+            <ul>
+              <li><span class="n">अनुदैर्ध्य तरंग (Longitudinal)</span> <span class="d">कणों का कंपन तरंग की दिशा के <b>समांतर</b> — ध्वनि, भूकंप की P-तरंग</span></li>
+              <li><span class="n">अनुप्रस्थ तरंग (Transverse)</span> <span class="d">कणों का कंपन तरंग की दिशा के <b>लंबवत</b> — डोरी/तार की तरंग, जल की सतही तरंग, भूकंप की S-तरंग</span></li>
+            </ul>
+          </li>
+          <li><span class="n">विद्युत-चुंबकीय तरंग (Electromagnetic wave)</span>
+          <span class="d">माध्यम की <b>आवश्यकता नहीं</b>; निर्वात में भी चलती है, वहाँ चाल = 3 × 10⁸ मी/से — प्रकाश, रेडियो, सूक्ष्म, अवरक्त, पराबैंगनी, X-किरण, गामा। ये सदैव <b>अनुप्रस्थ</b> होती हैं। विस्तार अध्याय 7.2 में</span></li>
+          <li><span class="n">द्रव्य तरंग (Matter wave)</span> <span class="d">डी ब्रॉग्ली की संकल्पना — चलते कण से संबद्ध तरंग; इलेक्ट्रॉन सूक्ष्मदर्शी का आधार</span></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <figure class="fig figbox">
+  <svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="अनुदैर्ध्य बनाम अनुप्रस्थ तरंग की तुलना — कणों के कंपन की दिशा का अंतर" style="width:100%;height:auto">
+    <rect width="800" height="480" fill="#fbfcfd"/>
+
+    <text x="40" y="34" font-size="20" font-weight="bold" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79">अनुप्रस्थ तरंग — कणों का कंपन तरंग की दिशा के लंबवत</text>
+    <path d="M60,120 C 90,50 155,50 185,120 C 215,190 280,190 310,120 C 340,50 405,50 435,120 C 465,190 530,190 560,120" fill="none" stroke="#1f4e79" stroke-width="4"/>
+    <line x1="620" y1="70" x2="620" y2="170" stroke="#5b2d5b" stroke-width="4"/>
+    <polygon points="620,62 614,80 626,80" fill="#5b2d5b"/>
+    <polygon points="620,178 614,160 626,160" fill="#5b2d5b"/>
+    <text x="636" y="112" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#5b2d5b" font-weight="bold">कणों का</text>
+    <text x="636" y="134" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#5b2d5b" font-weight="bold">कंपन ⇅</text>
+    <line x1="60" y1="215" x2="290" y2="215" stroke="#2f5d3a" stroke-width="4"/>
+    <polygon points="300,215 282,208 282,222" fill="#2f5d3a"/>
+    <text x="310" y="221" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">तरंग संचरण की दिशा → (उदाहरण — डोरी, जल-सतह, S-तरंग, प्रकाश)</text>
+
+    <line x1="30" y1="250" x2="770" y2="250" stroke="#d6dce2" stroke-width="2"/>
+
+    <text x="40" y="288" font-size="20" font-weight="bold" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324">अनुदैर्ध्य तरंग — कणों का कंपन तरंग की दिशा के समांतर</text>
+    <g stroke="#333" stroke-width="2.5">
+      <line x1="90" y1="310" x2="90" y2="370"/><line x1="98" y1="310" x2="98" y2="370"/><line x1="106" y1="310" x2="106" y2="370"/><line x1="114" y1="310" x2="114" y2="370"/><line x1="122" y1="310" x2="122" y2="370"/><line x1="130" y1="310" x2="130" y2="370"/>
+      <line x1="155" y1="310" x2="155" y2="370"/><line x1="180" y1="310" x2="180" y2="370"/><line x1="205" y1="310" x2="205" y2="370"/><line x1="230" y1="310" x2="230" y2="370"/>
+      <line x1="255" y1="310" x2="255" y2="370"/><line x1="263" y1="310" x2="263" y2="370"/><line x1="271" y1="310" x2="271" y2="370"/><line x1="279" y1="310" x2="279" y2="370"/><line x1="287" y1="310" x2="287" y2="370"/><line x1="295" y1="310" x2="295" y2="370"/>
+      <line x1="320" y1="310" x2="320" y2="370"/><line x1="345" y1="310" x2="345" y2="370"/><line x1="370" y1="310" x2="370" y2="370"/><line x1="395" y1="310" x2="395" y2="370"/>
+      <line x1="420" y1="310" x2="420" y2="370"/><line x1="428" y1="310" x2="428" y2="370"/><line x1="436" y1="310" x2="436" y2="370"/><line x1="444" y1="310" x2="444" y2="370"/><line x1="452" y1="310" x2="452" y2="370"/><line x1="460" y1="310" x2="460" y2="370"/>
+      <line x1="485" y1="310" x2="485" y2="370"/><line x1="510" y1="310" x2="510" y2="370"/><line x1="535" y1="310" x2="535" y2="370"/><line x1="560" y1="310" x2="560" y2="370"/>
+    </g>
+    <text x="110" y="392" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold" text-anchor="middle">संपीडन</text>
+    <text x="192" y="392" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold" text-anchor="middle">विरलन</text>
+    <text x="275" y="392" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold" text-anchor="middle">संपीडन</text>
+    <text x="357" y="392" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#1f4e79" font-weight="bold" text-anchor="middle">विरलन</text>
+    <text x="440" y="392" font-size="15" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#8a3324" font-weight="bold" text-anchor="middle">संपीडन</text>
+    <line x1="620" y1="340" x2="720" y2="340" stroke="#5b2d5b" stroke-width="4"/>
+    <polygon points="612,340 630,333 630,347" fill="#5b2d5b"/>
+    <polygon points="728,340 710,333 710,347" fill="#5b2d5b"/>
+    <text x="608" y="322" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#5b2d5b" font-weight="bold">कणों का कंपन ⇄</text>
+    <line x1="90" y1="430" x2="500" y2="430" stroke="#2f5d3a" stroke-width="4"/>
+    <polygon points="510,430 492,423 492,437" fill="#2f5d3a"/>
+    <text x="90" y="464" font-size="16" font-family="Kohinoor Devanagari, Devanagari Sangam MN, sans-serif" fill="#2f5d3a" font-weight="bold">तरंग संचरण की दिशा → (उदाहरण — ध्वनि, भूकंप की P-तरंग, कमानी में दी गई धक्का-तरंग)</text>
+  </svg>
+  <figcaption>दोनों प्रकार की तरंगों का मूल अंतर <strong>कणों के कंपन की दिशा</strong> का है।
+  अनुप्रस्थ तरंग में शृंग-गर्त बनते हैं; अनुदैर्ध्य तरंग में <strong>संपीडन (compression)</strong> —
+  जहाँ कण पास-पास और दाब अधिक — तथा <strong>विरलन (rarefaction)</strong> — जहाँ कण दूर-दूर और दाब कम।
+  अनुदैर्ध्य तरंग में दो क्रमागत संपीडनों के बीच की दूरी ही तरंगदैर्घ्य है।</figcaption>
+  </figure>
+  <div class="compare">
+    <div class="col a"><h4>अनुदैर्ध्य तरंग · Longitudinal</h4><ul>
+      <li>कणों का कंपन तरंग की दिशा के <b>समांतर</b></li>
+      <li><b>संपीडन एवं विरलन</b> बनते हैं</li>
+      <li><b>ठोस, द्रव एवं गैस — तीनों में</b> चल सकती है</li>
+      <li><b>ध्रुवण (polarisation) संभव नहीं</b></li>
+      <li>उदाहरण — <b>ध्वनि तरंग</b>, भूकंप की <b>P-तरंग</b> (प्राथमिक), कमानी में दिया गया धक्का</li>
+      <li>माध्यम में दाब एवं घनत्व बदलते रहते हैं — इसीलिए इसे <b>दाब तरंग</b> भी कहते हैं</li>
+    </ul></div>
+    <div class="col b"><h4>अनुप्रस्थ तरंग · Transverse</h4><ul>
+      <li>कणों का कंपन तरंग की दिशा के <b>लंबवत</b></li>
+      <li><b>शृंग एवं गर्त</b> बनते हैं</li>
+      <li>यांत्रिक रूप में केवल <b>ठोस तथा द्रव की सतह</b> पर — गैसों एवं द्रव के भीतर नहीं (क्योंकि उनमें दृढ़ता नहीं होती)</li>
+      <li><b>ध्रुवण संभव</b> — यही प्रकाश के अनुप्रस्थ होने का प्रमाण है</li>
+      <li>उदाहरण — डोरी/तार की तरंग, जल की <b>सतही</b> तरंग, भूकंप की <b>S-तरंग</b> (द्वितीयक), <b>सभी विद्युत-चुंबकीय तरंगें</b></li>
+      <li>S-तरंग द्रव में नहीं चलती — इसी से पृथ्वी का <b>बाह्य क्रोड द्रव</b> होने का प्रमाण मिला</li>
+    </ul></div>
+  </div>
+<h2 id="l">12. ध्वनि</h2>
+  <div class="box trap">
+    <span class="label">सावधानी — “ध्वनि निर्वात में नहीं, प्रकाश चलता है”</span>
+    <p>यह भेद UPPSC में अभिकथन–कारण तथा दो-कथन, दोनों रूपों में आता है। कारण स्पष्ट रखिए —</p>
+    <ul>
+      <li><strong>ध्वनि यांत्रिक तरंग है</strong> — उसे कंपन करने के लिए कण चाहिए। निर्वात में कण ही नहीं हैं।</li>
+      <li><strong>प्रकाश विद्युत-चुंबकीय तरंग है</strong> — उसमें विद्युत एवं चुंबकीय क्षेत्र परस्पर कंपन करते हैं,
+      माध्यम की आवश्यकता नहीं।</li>
+      <li>इसी से जुड़ा प्रेक्षण — <strong>बिजली पहले चमकती है, गर्जन बाद में सुनाई देता है</strong>, यद्यपि दोनों
+      एक साथ उत्पन्न होते हैं। प्रकाश की चाल लगभग <strong>3 × 10⁸ मी/से</strong> है, ध्वनि की मात्र
+      <strong>343 मी/से के आसपास</strong> — लगभग दस लाख गुना का अंतर।</li>
+      <li>व्यावहारिक नियम — गर्जन सुनाई देने में लगे सेकंडों को 3 से भाग दीजिए, बिजली की दूरी लगभग उतने
+      किलोमीटर होगी।</li>
+    </ul>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption style="text-align:left;font-weight:600;padding:.3rem 0">सुमेलन-तालिका 27 : विभिन्न माध्यमों में ध्वनि की चाल (25°C पर, NCERT के मानक आँकड़े)</caption>
+      <thead><tr><th>अवस्था</th><th>माध्यम</th><th>चाल (मीटर/सेकंड)</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="5"><strong>ठोस</strong></td><td>ऐलुमिनियम</td><td>6420</td></tr>
+        <tr><td>निकेल</td><td>6040</td></tr>
+        <tr><td><strong>इस्पात (Steel)</strong></td><td><strong>5960</strong></td></tr>
+        <tr><td>लोहा</td><td>5950</td></tr>
+        <tr><td>काँच (फ्लिंट)</td><td>3980</td></tr>
+        <tr><td rowspan="3"><strong>द्रव</strong></td><td><strong>समुद्री जल</strong></td><td><strong>1531</strong></td></tr>
+        <tr><td><strong>आसुत जल</strong></td><td><strong>1498</strong></td></tr>
+        <tr><td>एथेनॉल</td><td>1207</td></tr>
+        <tr><td rowspan="4"><strong>गैस</strong></td><td>हाइड्रोजन</td><td>1284</td></tr>
+        <tr><td>हीलियम</td><td>965</td></tr>
+        <tr><td><strong>वायु (25°C पर)</strong></td><td><strong>346</strong> &nbsp;<em>(0°C पर 331)</em></td></tr>
+        <tr><td>ऑक्सीजन</td><td>316</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mnemonic"><span class="label">ध्वनि के तीन अभिलक्षण — तीन राशियाँ</span>
+  <span class="key">“आयाम–प्रबलता · आवृत्ति–तारत्व · तरंगरूप–गुणता”</span>
+  <p class="exp">तीनों जोड़े एक ही क्रम में याद रखिए। <b>आ</b>याम से <b>प्र</b>बलता, <b>आवृ</b>त्ति से <b>ता</b>रत्व,
+  <b>तरंग-रूप</b> से <b>गुणता</b>। प्रश्न प्रायः यही पूछता है — “किसी ध्वनि का तारत्व किस पर निर्भर करता है?”
+  उत्तर सदैव <b>आवृत्ति</b> होगा, आयाम नहीं।</p></div>
+  <div class="mnemonic"><span class="label">तीनों परास — एक पंक्ति में</span>
+  <span class="key">“बीस से नीचे अव, बीस हज़ार से ऊपर परा”</span>
+  <p class="exp"><b>20 Hz से नीचे = अवश्रव्य</b> (हाथी, व्हेल, भूकंप) · <b>20 से 20,000 Hz = श्रव्य</b> (मनुष्य) ·
+  <b>20,000 Hz से ऊपर = पराश्रव्य</b> (चमगादड़, डॉल्फ़िन, SONAR)। ध्यान रखिए — <b>चमगादड़ एवं डॉल्फ़िन
+  पराश्रव्य तरंगें उत्पन्न भी करते हैं</b>; कुत्ता केवल सुन सकता है, उत्पन्न नहीं करता। यह बारीकी
+  विकल्पों में डाली जाती है।</p></div>
+  <div class="box up">
+    <span class="label">उत्तर प्रदेश संदर्भ — प्रदेश के दो विश्वप्रसिद्ध ध्वनि-स्थापत्य</span>
+    <ul>
+      <li><strong>ताजमहल, आगरा — अनुरणन का विश्व-प्रसिद्ध उदाहरण।</strong> मुख्य मक़बरे के भीतरी कक्ष का
+      विशाल दोहरा गुंबद इतना अनुरणित है कि वहाँ उच्चारित एक स्वर लगभग <strong>28 सेकंड</strong> तक गूँजता रहता है।
+      यह संयोग नहीं था — वहाँ निरंतर क़ुरान-पाठ करने वाले <em>हाफ़िज़</em> नियुक्त थे, और यह लंबा अनुरणन
+      उनके स्वर को कक्ष में देर तक बनाए रखता था। ध्यान दीजिए — यह <em>प्रतिध्वनि</em> नहीं,
+      <strong>अनुरणन</strong> है; अंतर वही है जो ऊपर बताया गया।</li>
+      <li><strong>बड़ा इमामबाड़ा, लखनऊ (1784, नवाब आसफ़-उद्-दौला; वास्तुकार किफ़ायतुल्लाह)</strong> —
+      इसका केंद्रीय कक्ष विश्व के सबसे बड़े बिना खंभों वाले धनुषाकार कक्षों में गिना जाता है, और इसकी
+      <strong>भूलभुलैया</strong> की दीवारें ऐसी बनी हैं कि एक कोने की <em>फुसफुसाहट</em> दूसरे कोने तक
+      स्पष्ट सुनाई देती है। यह “फुसफुसाहट दीर्घा (whispering gallery)” का भारतीय उदाहरण है —
+      ध्वनि का बार-बार परावर्तन, जिसमें ऊर्जा बिखरने के बजाय दीवार के साथ-साथ चलती रहती है।
+      कहा जाता है कि नवाब इसी का उपयोग परामर्श के लिए करते थे। (इसका निर्माण 1784 के अकाल में
+      <em>रोज़गार-राहत परियोजना</em> के रूप में हुआ था — यह तथ्य इतिहास में भी पूछा जाता है।)</li>
+      <li>इसके विपरीत <strong>गोल गुंबद</strong> (बीजापुर, कर्नाटक) की फुसफुसाहट दीर्घा प्रसिद्ध है — इसे
+      उत्तर प्रदेश का न समझें; यह विकल्पों में डाला जाने वाला निकट-समान भ्रम है।</li>
+    </ul>
+  </div>
+  <div class="box trap">
+    <span class="label">सावधानी — ध्वनि-खंड के छह भ्रम जो प्रश्न बनते हैं</span>
+    <ul>
+      <li><strong>प्रतिध्वनि बनाम अनुरणन</strong> — प्रतिध्वनि <em>अलग से</em> सुनाई देने वाली परावर्तित ध्वनि है
+      (कम-से-कम 17 मीटर दूरी चाहिए); अनुरणन <em>सतत गूँज</em> है। ताजमहल के गुंबद में अनुरणन है,
+      प्रतिध्वनि नहीं।</li>
+      <li><strong>तीव्रता बनाम प्रबलता</strong> — <em>तीव्रता</em> (intensity) भौतिक राशि है, ऊर्जा प्रति इकाई
+      क्षेत्रफल प्रति सेकंड; <em>प्रबलता</em> (loudness) उसका शरीर-वैज्ञानिक संवेदन है, जो कान की
+      संवेदनशीलता पर भी निर्भर करता है।</li>
+      <li><strong>ध्वनि की चाल दाब पर निर्भर नहीं करती</strong>, पर <em>ताप एवं आर्द्रता</em> पर करती है।</li>
+      <li><strong>चमगादड़ पराश्रव्य तरंगें उत्पन्न करता है</strong>; <em>कुत्ता केवल सुन सकता है</em>।</li>
+      <li><strong>ECG ध्वनि-आधारित नहीं है</strong> — वह हृदय की विद्युतीय क्रिया का आलेख है।
+      पराध्वनि वाला हृदय-परीक्षण <em>इकोकार्डियोग्राफ़ी</em> कहलाता है।</li>
+      <li><strong>डॉप्लर प्रभाव में स्रोत की वास्तविक आवृत्ति नहीं बदलती</strong> — यह अभिकथन–कारण का
+      उत्कृष्ट रूप है: अभिकथन सही, पर कारण में “स्रोत की आवृत्ति बदल जाती है” लिखा हो तो कारण गलत।</li>
+    </ul>
+  </div>
+<h2 id="m">13. अंतिम दोहराव</h2>
+<h3>13.1 सभी सूत्र एक जगह</h3>
+  <div class="tablewrap">
+    <table>
+      <caption style="text-align:left;font-weight:600;padding:.3rem 0">सुमेलन-तालिका 33 : अध्याय के सभी प्रमुख सूत्र</caption>
+      <thead><tr><th>विषय</th><th>सूत्र</th><th>टिप्पणी</th></tr></thead>
+      <tbody>
+        <tr><td>गति के समीकरण</td><td>v = u + at · s = ut + ½at² · v² = u² + 2as</td><td>केवल एकसमान त्वरण पर</td></tr>
+        <tr><td>n-वें सेकंड में दूरी</td><td>s<sub>n</sub> = u + (a/2)(2n − 1)</td><td>—</td></tr>
+        <tr><td>वृत्तीय गति</td><td>अभिकेंद्र बल = mv²/r = mω²r</td><td>दिशा केंद्र की ओर</td></tr>
+        <tr><td>न्यूटन का द्वितीय नियम</td><td>F = ma = Δp/Δt</td><td>संवेग p = mv</td></tr>
+        <tr><td>आवेग</td><td>J = F × Δt = Δp</td><td>मात्रक न्यूटन-सेकंड</td></tr>
+        <tr><td>गुरुत्वाकर्षण</td><td>F = Gm₁m₂/r² · g = GM/R²</td><td>G सार्वत्रिक, g स्थानीय</td></tr>
+        <tr><td>ऊँचाई/गहराई पर g</td><td>g<sub>h</sub> = g(1 − 2h/R) · g<sub>d</sub> = g(1 − d/R)</td><td>केंद्र पर g = 0</td></tr>
+        <tr><td>भार</td><td>W = mg</td><td>मात्रक न्यूटन</td></tr>
+        <tr><td>पलायन एवं कक्षीय वेग</td><td>v<sub>e</sub> = √(2gR) · v<sub>o</sub> = √(gR) · v<sub>e</sub> = √2 v<sub>o</sub></td><td>वस्तु के द्रव्यमान से स्वतंत्र</td></tr>
+        <tr><td>केप्लर का तृतीय नियम</td><td>T² ∝ a³</td><td>a = अर्ध-दीर्घ अक्ष</td></tr>
+        <tr><td>कार्य</td><td>W = F s cos θ</td><td>θ = 90° पर शून्य</td></tr>
+        <tr><td>ऊर्जा</td><td>KE = ½mv² = p²/2m · PE = mgh</td><td>मात्रक जूल</td></tr>
+        <tr><td>शक्ति</td><td>P = W/t = F·v</td><td>मात्रक वाट</td></tr>
+        <tr><td>दक्षता</td><td>η = (उपयोगी निर्गत ÷ कुल निवेश) × 100</td><td>सदैव 100% से कम</td></tr>
+        <tr><td>घर्षण</td><td>f = μN</td><td>क्षेत्रफल पर निर्भर नहीं</td></tr>
+        <tr><td>उत्तोलक</td><td>भार × भार भुजा = प्रयास × प्रयास भुजा</td><td>यांत्रिक लाभ = भार/प्रयास</td></tr>
+        <tr><td>दाब</td><td>P = F/A · द्रव में P = hρg</td><td>पात्र के आकार से स्वतंत्र</td></tr>
+        <tr><td>पास्कल का नियम</td><td>F = f × (A/a)</td><td>द्रवचालित लिफ़्ट/ब्रेक</td></tr>
+        <tr><td>आर्किमिडीज़</td><td>उत्प्लावन बल = विस्थापित द्रव का भार = V<sub>डूबा</sub> ρ g</td><td>तैरने पर उत्प्लावन बल = भार</td></tr>
+        <tr><td>डूबा हुआ अंश</td><td>डूबा आयतन ÷ कुल आयतन = वस्तु का घनत्व ÷ द्रव का घनत्व</td><td>हिमशैल का ≈ 1/10 भाग ऊपर</td></tr>
+        <tr><td>बर्नूली</td><td>P + ½ρv² + ρgh = स्थिरांक</td><td>चाल अधिक ⇒ दाब कम</td></tr>
+        <tr><td>स्टोक्स का नियम</td><td>F = 6πηrv</td><td>सीमांत वेग</td></tr>
+        <tr><td>सरल लोलक</td><td>T = 2π√(L/g)</td><td>द्रव्यमान एवं आयाम से स्वतंत्र</td></tr>
+        <tr><td>तरंग</td><td>v = fλ · f = 1/T</td><td>माध्यम बदलने पर आवृत्ति नहीं बदलती</td></tr>
+        <tr><td>प्रतिध्वनि / SONAR</td><td>2d = v × t</td><td>2 से भाग देना न भूलें</td></tr>
+      </tbody>
+    </table>
+  </div>
+<h3>13.2 वैज्ञानिक ↔ योगदान</h3>
+  <div class="tablewrap">
+    <table>
+      <caption style="text-align:left;font-weight:600;padding:.3rem 0">सुमेलन-तालिका 34 : वैज्ञानिक ↔ खोज/सिद्धांत <em>(यह तालिका सुमेलन-प्रश्न का सीधा स्रोत है)</em></caption>
+      <thead><tr><th>वैज्ञानिक</th><th>योगदान</th><th>याद रखने योग्य</th></tr></thead>
+      <tbody>
+        <tr><td><strong>आर्किमिडीज़</strong> (यूनान, ~287–212 ई.पू.)</td><td>उत्प्लावन का सिद्धांत; उत्तोलक का नियम</td><td>“यूरेका!”; <em>“मुझे एक आधार दो, मैं पृथ्वी हिला दूँगा”</em></td></tr>
+        <tr><td><strong>गैलीलियो गैलिली</strong> (इटली, 1564–1642)</td><td>जड़त्व का नियम; मुक्त पतन; लोलक की समकालिकता; दूरबीन से खगोलीय प्रेक्षण</td><td>पीसा की मीनार का प्रयोग (कथानुसार)</td></tr>
+        <tr><td><strong>जोहानेस केप्लर</strong> (जर्मनी, 1571–1630)</td><td>ग्रहीय गति के तीन नियम</td><td>पहले दो 1609, तीसरा 1619</td></tr>
+        <tr><td><strong>एवांजेलिस्टा टॉरिसेली</strong> (इटली)</td><td><strong>बैरोमीटर</strong> का आविष्कार (1643); निर्वात का प्रदर्शन</td><td>“टॉर” दाब का मात्रक इन्हीं के नाम पर</td></tr>
+        <tr><td><strong>ब्लेज़ पास्कल</strong> (फ्रांस)</td><td>द्रव-दाब के संचरण का नियम</td><td>दाब का SI मात्रक इन्हीं के नाम पर</td></tr>
+        <tr><td><strong>रॉबर्ट हुक</strong> (इंग्लैंड)</td><td>प्रत्यास्थता का नियम (हुक का नियम)</td><td>कोशिका (cell) शब्द भी इन्हीं का</td></tr>
+        <tr><td><strong>क्रिश्चियन हाइगेंस</strong> (नीदरलैंड)</td><td>लोलक घड़ी (1656); प्रकाश का तरंग सिद्धांत</td><td>—</td></tr>
+        <tr><td><strong>आइज़ैक न्यूटन</strong> (इंग्लैंड, 1642–1727)</td><td>गति के तीन नियम; गुरुत्वाकर्षण का सार्वत्रिक नियम; कलन; प्रकाश का वर्ण-विक्षेपण</td><td><em>Principia</em>, 1687; बल का मात्रक इन्हीं के नाम पर</td></tr>
+        <tr><td><strong>डेनियल बर्नूली</strong> (स्विट्ज़रलैंड)</td><td>तरल-गतिकी का सिद्धांत</td><td><em>Hydrodynamica</em>, 1738</td></tr>
+        <tr><td><strong>हेनरी कैवेंडिश</strong> (इंग्लैंड)</td><td><strong>G का प्रयोगशाला-मापन</strong> (1798) मरोड़-तुला से</td><td>इसे “पृथ्वी को तौलना” कहा गया</td></tr>
+        <tr><td><strong>क्रिश्चियन डॉप्लर</strong> (ऑस्ट्रिया)</td><td><strong>डॉप्लर प्रभाव</strong> (1842)</td><td>रक्त-विचलन, स्पीड गन, मौसम रेडार</td></tr>
+        <tr><td><strong>जेम्स प्रेस्कॉट जूल</strong> (इंग्लैंड)</td><td>ऊष्मा का यांत्रिक तुल्यांक; ऊर्जा-संरक्षण की स्थापना</td><td>ऊर्जा का मात्रक इन्हीं के नाम पर</td></tr>
+        <tr><td><strong>जेम्स वाट</strong> (स्कॉटलैंड)</td><td>बेहतर भाप इंजन</td><td>शक्ति का मात्रक इन्हीं के नाम पर</td></tr>
+        <tr><td><strong>जॉर्ज गैब्रियल स्टोक्स</strong> (आयरलैंड/इंग्लैंड)</td><td>श्यान माध्यम में गिरती गोली पर बल — स्टोक्स का नियम</td><td>सीमांत वेग</td></tr>
+        <tr><td><strong>अल्बर्ट आइंस्टीन</strong> (जर्मनी)</td><td>सापेक्षिकता; द्रव्यमान-ऊर्जा तुल्यता E = mc²; प्रकाश-विद्युत प्रभाव</td><td>1921 का भौतिकी नोबेल <em>प्रकाश-विद्युत प्रभाव</em> के लिए, सापेक्षिकता के लिए नहीं — बहु-पूछित</td></tr>
+        <tr><td><strong>एडविन हबल</strong> (अमेरिका)</td><td>आकाशगंगाओं के रक्त-विचलन से ब्रह्मांड के विस्तार का प्रमाण</td><td>डॉप्लर प्रभाव का खगोलीय उपयोग</td></tr>
+      </tbody>
+    </table>
+  </div>
+<h3>13.3 कालक्रम — भौतिकी की निर्णायक तिथियाँ</h3>
+  <div class="timeline">
+    <div class="tl"><span class="yr">~250 ई.पू.</span><span class="ev"><b>आर्किमिडीज़</b> — उत्प्लावन का सिद्धांत तथा उत्तोलक का नियम</span></div>
+    <div class="tl alt"><span class="yr">1609 एवं 1619</span><span class="ev"><b>केप्लर</b> — ग्रहीय गति के पहले दो नियम (1609) तथा तीसरा नियम (1619)</span></div>
+    <div class="tl"><span class="yr">1643</span><span class="ev"><b>टॉरिसेली</b> — पारद बैरोमीटर; वायुमंडलीय दाब का पहला मापन</span></div>
+    <div class="tl alt"><span class="yr">1656</span><span class="ev"><b>हाइगेंस</b> — लोलक घड़ी, जिसने समय-मापन की परिशुद्धता बदल दी</span></div>
+    <div class="tl"><span class="yr">1687</span><span class="ev"><b>न्यूटन का <em>प्रिंसिपिया</em></b> — गति के तीन नियम एवं गुरुत्वाकर्षण का सार्वत्रिक नियम</span></div>
+    <div class="tl alt"><span class="yr">1738</span><span class="ev"><b>डेनियल बर्नूली</b> — <em>Hydrodynamica</em>; तरल-प्रवाह का सिद्धांत</span></div>
+    <div class="tl"><span class="yr">1798</span><span class="ev"><b>कैवेंडिश</b> — मरोड़ तुला से G का मापन (“पृथ्वी को तौलना”)</span></div>
+    <div class="tl alt"><span class="yr">1842</span><span class="ev"><b>क्रिश्चियन डॉप्लर</b> — डॉप्लर प्रभाव</span></div>
+    <div class="tl"><span class="yr">1875</span><span class="ev"><b>मीटर संधि (Metre Convention)</b> — 20 मई; BIPM की स्थापना का आधार</span></div>
+    <div class="tl alt"><span class="yr">1905</span><span class="ev"><b>आइंस्टीन</b> — विशिष्ट सापेक्षिकता एवं E = mc²</span></div>
+    <div class="tl"><span class="yr">1957</span><span class="ev"><b>भारत ने मीट्रिक पद्धति अपनाई</b>; उसी वर्ष प्रथम कृत्रिम उपग्रह स्पूतनिक-1 का प्रक्षेपण</span></div>
+    <div class="tl alt"><span class="yr">1960</span><span class="ev"><b>SI पद्धति की स्थापना</b> — 11वाँ CGPM</span></div>
+    <div class="tl"><span class="yr">1971</span><span class="ev"><b>अपोलो-15</b> — चंद्रमा पर हथौड़ा एवं पंख एक साथ गिराकर गैलीलियो के निष्कर्ष का प्रत्यक्ष प्रदर्शन</span></div>
+    <div class="tl alt"><span class="yr">1995</span><span class="ev"><b>रेडियन एवं स्टेरेडियन</b> “पूरक” से हटाकर व्युत्पन्न मात्रकों में सम्मिलित</span></div>
+    <div class="tl"><span class="yr">नवंबर 2018</span><span class="ev"><b>26वाँ CGPM</b> — किलोग्राम, ऐम्पियर, केल्विन एवं मोल की पुनर्परिभाषा का निर्णय</span></div>
+    <div class="tl alt"><span class="yr">20 मई 2019</span><span class="ev"><b>नई SI परिभाषाएँ लागू</b> — अब कोई भी मात्रक किसी भौतिक वस्तु पर आधारित नहीं</span></div>
+    <div class="tl"><span class="yr">नवंबर 2022</span><span class="ev"><b>27वाँ CGPM</b> — चार नए उपसर्ग: रोना, क्वेटा, रोंटो, क्वेक्टो</span></div>
+  </div>
+<h3>13.4 चालीस सेकंड की पुनरावृत्ति</h3>
+  <div class="facts">
+    <ul>
+      <li><strong>मापन —</strong> मूल राशियाँ ठीक सात; क्षेत्रफल, आयतन, बल, ऊर्जा, आवेश कोई मूल राशि नहीं;
+      20 मई 2019 से किलोग्राम, ऐम्पियर, केल्विन एवं मोल पुनर्परिभाषित; किलोग्राम अब <em>प्लांक स्थिरांक</em> से,
+      मोल <em>आवोगाद्रो</em> से, केल्विन <em>बोल्ट्ज़मान</em> से, ऐम्पियर <em>मूल आवेश</em> से;
+      प्रकाश वर्ष एवं पारसेक दूरी के मात्रक; पारसेक = 3.26 प्रकाश वर्ष; kWh ऊर्जा का मात्रक;
+      विद्युत धारा एवं दाब <em>अदिश</em>; भार एवं आवेग <em>सदिश</em>।</li>
+      <li><strong>गति —</strong> दूरी ≥ विस्थापन; पूरे वृत्ताकार चक्कर पर विस्थापन शून्य, दूरी 2πr;
+      औसत चाल ≥ औसत वेग का परिमाण; ऊपर फेंकी गेंद के उच्चतम बिंदु पर वेग शून्य पर त्वरण g;
+      एकसमान वृत्तीय गति त्वरित गति है; <strong>अपकेंद्र बल छद्म बल है</strong>; डोरी टूटने पर पत्थर
+      <em>स्पर्शरेखीय</em> दिशा में उड़ता है।</li>
+      <li><strong>न्यूटन —</strong> जड़त्व की माप द्रव्यमान है; द्वितीय नियम सबसे मौलिक (उससे प्रथम निकलता है);
+      क्रिया-प्रतिक्रिया <em>भिन्न वस्तुओं</em> पर, इसलिए निरस्त नहीं होतीं; रॉकेट निर्वात में भी चलता है;
+      हर टक्कर में संवेग संरक्षित, गतिज ऊर्जा केवल प्रत्यास्थ टक्कर में।</li>
+      <li><strong>गुरुत्वाकर्षण —</strong> G सार्वत्रिक, g स्थानीय; g ध्रुवों पर अधिकतम, भूमध्य रेखा पर न्यूनतम,
+      केंद्र पर शून्य; द्रव्यमान नहीं बदलता, भार बदलता है; तुला द्रव्यमान मापती है, कमानीदार तुला भार;
+      पलायन वेग 11.2 किमी/से और वस्तु के द्रव्यमान से स्वतंत्र; चंद्रमा पर वायुमंडल न होने का कारण
+      कम पलायन वेग; उपग्रह में भारहीनता “गुरुत्व की अनुपस्थिति” नहीं, <em>मुक्त पतन</em> है;
+      केप्लर — दीर्घवृत्त, समान क्षेत्रफल, T² ∝ a³।</li>
+      <li><strong>कार्य-ऊर्जा —</strong> कार्य शून्य जब बल ⟂ विस्थापन (कुली, अभिकेंद्र बल, चंद्रमा);
+      घर्षण ऋणात्मक कार्य करता है; चाल दुगुनी ⇒ गतिज ऊर्जा चौगुनी; ऊर्जा न बनती न नष्ट होती;
+      दक्षता सदैव 100% से कम; सतत गति मशीन असंभव; 1 HP ≈ 746 W।</li>
+      <li><strong>घर्षण-मशीन —</strong> क्रम सीमांत &gt; सर्पी &gt; लोटनिक; घर्षण क्षेत्रफल पर निर्भर नहीं;
+      “आ-भा-प्र” = आलंब/भार/प्रयास बीच में = प्रथम/द्वितीय/तृतीय वर्ग; चिमटा एवं अग्रबाहु तृतीय वर्ग;
+      सरौता द्वितीय, कैंची प्रथम; द्वितीय वर्ग का यांत्रिक लाभ सदैव &gt;1, तृतीय का सदैव &lt;1।</li>
+      <li><strong>दाब-तरल —</strong> द्रव-दाब = hρg, पात्र के आकार से स्वतंत्र; 1 atm = 76 सेमी पारा = 1,01,325 Pa;
+      प्रेशर कुकर एवं पर्वत पर उबलना; पास्कल ⇒ द्रवचालित ब्रेक; उत्प्लावन बल विस्थापित द्रव के भार के बराबर;
+      बर्फ़ पिघलने पर जल-स्तर अपरिवर्तित; तैरती वस्तु का आभासी भार शून्य; पृष्ठ तनाव से बूँद गोल एवं
+      सुई का तैरना; ताप बढ़ने पर पृष्ठ तनाव घटता है; <strong>द्रवों की श्यानता ताप से घटती, गैसों की बढ़ती है</strong>;
+      बर्नूली ⇒ चाल अधिक तो दाब कम ⇒ वायुयान का उत्थापन।</li>
+      <li><strong>तरंग-ध्वनि —</strong> लोलक का आवर्तकाल द्रव्यमान एवं आयाम से स्वतंत्र; गर्मी में लोलक घड़ी सुस्त;
+      सेकंड-लोलक का T = 2 सेकंड, लंबाई ≈ 99.4 सेमी; तरंग ऊर्जा ले जाती है, पदार्थ नहीं; ध्वनि अनुदैर्ध्य,
+      प्रकाश अनुप्रस्थ; माध्यम बदलने पर आवृत्ति नहीं बदलती; ध्वनि निर्वात में नहीं चलती; चाल ठोस &gt; द्रव &gt; गैस;
+      ताप एवं आर्द्रता से चाल बढ़ती है, दाब से नहीं; प्रबलता ← आयाम, तारत्व ← आवृत्ति, गुणता ← तरंग-रूप;
+      प्रतिध्वनि हेतु न्यूनतम 17.2 मीटर; ताजमहल में अनुरणन ≈ 28 सेकंड; श्रव्य परास 20–20,000 Hz;
+      SONAR ध्वनि से, RADAR रेडियो तरंगों से; 2d = vt; ECG विद्युतीय, इकोकार्डियोग्राफ़ी पराध्वनिक;
+      डॉप्लर में स्रोत की वास्तविक आवृत्ति नहीं बदलती; “सुपरसोनिक” चाल का, “अल्ट्रासोनिक” आवृत्ति का शब्द है।</li>
+    </ul>
+  </div>
+  <div class="mnemonic"><span class="label">पूरे अध्याय की एक-पंक्ति कुंजी</span>
+  <span class="key">“मापो · चलाओ · धकेलो · गिराओ · काम करो · रगड़ो · बहाओ · हिलाओ · सुनो”</span>
+  <p class="exp"><b>मापो</b> = मापन एवं मात्रक → <b>चलाओ</b> = गति → <b>धकेलो</b> = न्यूटन के नियम →
+  <b>गिराओ</b> = गुरुत्वाकर्षण → <b>काम करो</b> = कार्य-ऊर्जा-शक्ति → <b>रगड़ो</b> = घर्षण एवं सरल मशीनें →
+  <b>बहाओ</b> = दाब एवं तरल → <b>हिलाओ</b> = दोलन एवं तरंग → <b>सुनो</b> = ध्वनि।
+  यही नौ शब्द अध्याय के नौ खंडों का क्रम हैं — परीक्षा-कक्ष में इसी क्रम से स्मृति खुलती है।</p></div>
+<div class="schedule">
+<span class="label">अंतराल-पुनरावृत्ति — कब दोहराएँ</span>
+<p style="font-size:.9rem;margin:0 0 .6rem">एक बार पढ़कर भूल जाना स्वाभाविक है। बढ़ते अंतराल पर दोहराने से
+वही तथ्य दीर्घकालिक स्मृति में बैठता है। हर बार पूरा अध्याय नहीं — केवल यह पृष्ठ।</p>
+<ol>
+<li><span class="day">दिन 0</span> पूरा अध्याय पढ़ें, स्वयं-जाँच के प्रश्न स्वयं हल करें <span class="tick"></span></li>
+<li><span class="day">दिन 1</span> केवल यह पृष्ठ — सातों आरेख तथा छहों तुलना-कार्ड <span class="tick"></span></li>
+<li><span class="day">दिन 7</span> यह पृष्ठ + अध्याय के केवल ट्रैप-बॉक्स एवं सुमेलन-तालिकाएँ <span class="tick"></span></li>
+<li><span class="day">दिन 21</span> यह पृष्ठ; जो सूत्र भूल गए, उन्हीं के खंड दोबारा पढ़ें <span class="tick"></span></li>
+<li><span class="day">दिन 45</span> यह पृष्ठ + अध्याय के स्वयं-जाँच प्रश्न दोबारा <span class="tick"></span></li>
+<li><span class="day">परीक्षा से 7 दिन</span> केवल यह पृष्ठ — विशेषतः खंड 2, 13.1 तथा 13.4 <span class="tick"></span></li>
+</ol>
+</div>
+
+<footer>
+यह दृश्य पुनरावृत्ति पत्र अध्याय <a href="7.1-maapan-yantriki.html">7.1 मापन, गति एवं यांत्रिकी</a> का साथी है —
+वहाँ हर बिंदु की पूरी व्याख्या तथा सभी 35 सुमेलन-तालिकाएँ हैं (यंत्र ↔ मापी जाने वाली राशि, विमीय सूत्र,
+g का स्थान-वार परिवर्तन, उत्तोलक के तीन वर्ग, तथा सिद्धांत ↔ अनुप्रयोग सहित)।
+इस पृष्ठ के सभी आरेख, तुलना-कार्ड, वृक्ष, शृंखलाएँ, समयरेखा, तालिकाएँ, स्मृति-सूत्र तथा स्थिरांक
+<b>उसी अध्याय से शब्दशः</b> लिए गए हैं — यहाँ कुछ भी नया गढ़ा नहीं गया, केवल चुना गया है।
+सातों आरेख <b>मूल अध्याय के SVG</b> हैं, अतः किसी बाहरी चित्र का श्रेय अपेक्षित नहीं;
+यहाँ <b>कोई फ़ोटो तथा कोई मानचित्र नहीं</b> है — मापन एवं यांत्रिकी स्थान-विषय नहीं हैं।
+जहाँ कोई मान परिस्थिति-सापेक्ष है (ध्वनि की चाल ↔ ताप, g ↔ स्थान), वहाँ शर्त सहित ही दिया गया है।
+</footer>
+</div>
