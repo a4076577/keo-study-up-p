@@ -2,7 +2,8 @@
 
 **Generated UPPSC study site** — static HTML, in Hindi.
 
-Remote: `github.com/a4076577/keo-study-up-p`
+Live: <https://owl-study-up-p.vercel.app/> — auto-deploys from `main`.
+Remote: `github.com/a4076577/keo-study-up-p` (repo name unchanged; only the Vercel domain moved).
 
 This is the *output* of the pipeline in the parent `uppsc/` project — generated from
 the specs in `../analysis/` by the scripts in `../scripts/`. Prefer regenerating over
